@@ -5,16 +5,19 @@
 
 Клонирование репозитория
 
-git clone https://gitlab.com/nik.ananyev/eye-of-lean-production.git
+git clone https://gitlab.com/nik.ananyev/eye-of-lean-production.git](https://github.com/mustafayevbst/minesweeper.git
 
 Установка зависимостей
-Обратите внимание, что файл установки модуля dlib подходит ТОЛЬКО для версий Python 3.11
-Файлы установки для других версий Python можно найти по ссылке
 
+Установка зависимостей
+Для сборки проекта необходимы:
 
-pip install -r requirements.txt
-При установке модуля face_recognition возможны ошибки из-за несовместимости с новыми версиями numpy, для решения рекомендуем понизить версию numpy до 1.26
+C++ компилятор с поддержкой C++17
 
-Запуск GUI
+CMake (3.10+)
 
-python Eye_of_Lean_Production.py
+SFML (2.5+)
+
+Doctest (для тестов)
+
+Doxygen (для генерации документации)
