@@ -5,7 +5,7 @@
 
 Клонирование репозитория
 
-git clone https://gitlab.com/nik.ananyev/eye-of-lean-production.git](https://github.com/mustafayevbst/minesweeper.git
+git clone https://github.com/mustafayevbst/minesweeper.git
 
 Установка зависимостей
 
