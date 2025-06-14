@@ -1,35 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Руководство пользователя — Игра "Сапёр"</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; }
+        pre { background: #ecf0f1; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: "Courier New", Courier, monospace; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; border: 1px solid #ccc; padding: 5px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+<h1>Руководство пользователя: Игра "Сапёр"</h1>
+
+<h2>Назначение программы</h2>
+<p>
+Данное приложение представляет собой реализацию классической игры "Сапёр" на языке C++ с использованием графической библиотеки <strong>SFML</strong>. Игра позволяет пользователю тренировать внимание, логику и скорость принятия решений, открывая клетки игрового поля и избегая мин.
+</p>
+
+<h2>Функционал программы</h2>
+<ul>
+    <li>Графический интерфейс с использованием SFML</li>
+    <li>Выбор уровня сложности</li>
+    <li>Система победы и поражения</li>
+    <li>Главное меню с навигацией</li>
+    <li>Модульное тестирование (Doctest)</li>
+    <li>Автоматическая генерация документации (Doxygen)</li>
+    <li>Кроссплатформенная сборка через CMake</li>
+</ul>
+
+<h2>Установка программы</h2>
+
+<h3>Предварительные требования</h3>
+<ul>
+    <li>Компилятор C++ с поддержкой стандарта <strong>C++17</strong></li>
+    <li><strong>MinGW 13.1.0 (64-bit)</strong> — обязательная версия для Windows</li>
+    <li><a href="https://github.com/brechtsanders/winlibs_mingw/releases/download/13.1.0-16.0.5-11.0.0-msvcrt-r5/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5.7z" target="_blank">Скачать MinGW 13.1.0</a></li>
+    <li><strong>CMake</strong> версии 3.10 и выше</li>
+    <li><a href="https://www.sfml-dev.org/download.php" target="_blank">SFML 2.6.2</a></li>
+    <li>Doctest (для модульных тестов)</li>
+    <li>Doxygen (для генерации документации)</li>
+</ul>
+
+<h3>Клонирование репозитория</h3>
+<pre><code>git clone https://github.com/mustafayevbst/minesweeper.git
+cd minesweeper</code></pre>
+
 <h2>Сборка проекта</h2>
 
-<p>Для сборки проекта выполните следующие шаги:</p>
-
 <ol>
-  <li>Клонируйте репозиторий:</li>
+    <li>Создайте директорию для сборки:</li>
 </ol>
-
-<pre><code>git clone https://github.com/mustafayevbst/minesweeper.git
-cd minesweeper
-</code></pre>
+<pre><code>mkdir build
+cd build</code></pre>
 
 <ol start="2">
-  <li>Создайте и перейдите в каталог сборки:</li>
+    <li>Запустите CMake:</li>
 </ol>
-
-<pre><code>mkdir build
-cd build
-</code></pre>
+<pre><code>cmake ..</code></pre>
 
 <ol start="3">
-  <li>Запустите CMake для генерации файлов сборки:</li>
+    <li>Соберите проект:</li>
 </ol>
+<pre><code>cmake --build .</code></pre>
 
-<pre><code>cmake ..
+<h2>Запуск программы</h2>
+<p>После сборки запустите исполняемый файл:</p>
+<pre><code>./minesweeper.exe</code></pre>
+
+<h2>Основные сценарии использования</h2>
+
+<h3>Главное меню</h3>
+<p>После запуска игры появляется главное меню с тремя пунктами:</p>
+<ul>
+    <li><strong>Старт</strong> — начать игру;</li>
+    <li><strong>Выбрать уровень сложности</strong> — выбрать размер поля и количество мин;</li>
+    <li><strong>Выход</strong> — завершить работу программы.</li>
+</ul>
+
+<img src="images/main_menu.png" alt="Главное меню">
+
+<h3>Игровое поле</h3>
+<p>После выбора уровня сложности создаётся игровое поле. Игрок должен открывать клетки, избегая мин:</p>
+
+<img src="images/gameplay.png" alt="Игровое поле">
+
+<h3>Победа</h3>
+<p>Игра завершается победой, если все клетки без мин открыты:</p>
+<img src="images/victory.png" alt="Победа">
+
+<h3>Поражение</h3>
+<p>Игра завершается поражением при открытии клетки с миной:</p>
+<img src="images/defeat.png" alt="Поражение">
+
+<h2>Пример кода (модуль Board)</h2>
+
+<pre><code>// Board.h
+class Board {
+public:
+    Board(int width, int height, int mines);
+    void revealCell(int x, int y);
+    bool isGameOver() const;
+    bool isWin() const;
+private:
+    int width_;
+    int height_;
+    int mines_;
+    // Остальные внутренние данные
+};
 </code></pre>
 
-<ol start="4">
-  <li>Соберите проект:</li>
-</ol>
+<h2>Генерация документации</h2>
 
-<pre><code>cmake --build .
-</code></pre>
+<p>Чтобы сгенерировать документацию с помощью Doxygen:</p>
 
-<p>После успешной сборки исполняемый файл <code>minesweeper.exe</code> появится в каталоге <code>build</code>. Запустите его для начала игры.</p>
+<pre><code>doxygen Doxyfile</code></pre>
+
+<h2>Запуск модульных тестов</h2>
+
+<p>Запуск тестов осуществляется отдельной сборкой и запуском тестового проекта:</p>
+
+<pre><code>./tests/test_board.exe</code></pre>
+
+<h2>Автор</h2>
+<p><strong>mustafayevbst</strong></p>
+
+</body>
+</html>
