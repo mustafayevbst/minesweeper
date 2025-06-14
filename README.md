@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Руководство пользователя — Игра "Сапёр"</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; }
-        pre { background: #ecf0f1; padding: 10px; border-radius: 5px; overflow-x: auto; }
-        code { font-family: "Courier New", Courier, monospace; }
-        a { color: #2980b9; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        img { max-width: 100%; border: 1px solid #ccc; padding: 5px; margin: 10px 0; }
-    </style>
-</head>
-<body>
-
 <h1>Руководство пользователя: Игра "Сапёр"</h1>
 
 <h2>Назначение программы</h2>
