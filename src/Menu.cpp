@@ -10,7 +10,7 @@ Menu::Menu(float width, float height)
     }
 
     std::vector<std::wstring> labels = {
-        L"Начать",
+        L"Старт",
         L"Выбрать сложность",
         L"Выйти"
     };

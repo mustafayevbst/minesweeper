@@ -1,7 +1,7 @@
 #include "Game.h"
 
 Game::Game(int width, int height, int mines)
-    : window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),  // без возможности ресайза
+    : window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Mineswepper", sf::Style::Titlebar | sf::Style::Close),  // без возможности ресайза
       board_(width, height, mines),
       menu_(width * tileSize_, height * tileSize_),
       currentScreen(GameScreen::MainMenu)
