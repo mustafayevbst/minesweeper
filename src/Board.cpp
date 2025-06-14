@@ -19,7 +19,7 @@ Board::Board(int w, int h, int m) : width(w), height(h), mines(m), tileSize(32) 
         }
     }
 
-    if (!font.loadFromFile("assets/Zing Rust.ttf")) {
+    if (!font.loadFromFile("assets/arial.ttf")) {
         std::cerr << "Font not found\n";
         std::exit(1);
     }
@@ -84,7 +84,7 @@ void Board::toggleFlag(int x, int y) {
 void Board::draw(sf::RenderWindow& window) const {
     sf::Sprite sprite;
     sprite.setTexture(tilesTexture);
-
+    window.setFramerateLimit(60);
     for (int i = 0; i < width; ++i) {
         for (int j = 0; j < height; ++j) {
             sprite.setPosition(i * tileSize, j * tileSize);
@@ -108,70 +108,30 @@ void Board::draw(sf::RenderWindow& window) const {
         }
     }
 
+    auto drawCenteredText = [&](const std::string& message, unsigned int charSize, sf::Color color, float yOffset) {
+        sf::Text text;
+        text.setFont(font);
+        text.setCharacterSize(charSize);
+        text.setFillColor(color);
+        text.setString(sf::String::fromUtf8(message.begin(), message.end()));
+
+        sf::FloatRect bounds = text.getLocalBounds();
+        text.setOrigin(bounds.left + bounds.width / 2.f, bounds.top + bounds.height / 2.f);
+        text.setPosition(width * tileSize / 2.f, height * tileSize / 2.f + yOffset);
+
+        window.draw(text);
+    };
+
     if (gameState == GameState::Lost) {
-        sf::Text text1, text2;
-        text1.setFont(font);
-        text2.setFont(font);
-
-        std::string message1 = u8"Вы проиграли!";
-        text1.setString(sf::String::fromUtf8(message1.begin(), message1.end()));
-        std::string message2 = u8"Нажмите ENTER для ещё одной попытки";
-        text2.setString(sf::String::fromUtf8(message2.begin(), message2.end()));
-
-        // Выбираем читаемый размер
-        text1.setCharacterSize(48);
-        text2.setCharacterSize(18);
-
-    // Цвета, например красный для первого и белый для второго
-        text1.setFillColor(sf::Color::Black);
-        text2.setFillColor(sf::Color::White);
-
-    // Центрируем текст1 по середине окна (ширина*tileSize, высота*tileSize)
-        sf::Vector2f center(width * tileSize / 2.f, height * tileSize / 2.f);
-
-    // Вычисляем bounds для text1
-        sf::FloatRect bounds1 = text1.getLocalBounds();
-        text1.setOrigin(bounds1.left + bounds1.width / 2.f, bounds1.top + bounds1.height / 2.f);
-        text1.setPosition(center.x, center.y - 30);  // чуть выше центра
-
-    // Аналогично для text2, но чуть ниже text1
-        sf::FloatRect bounds2 = text2.getLocalBounds();
-        text2.setOrigin(bounds2.left + bounds2.width / 2.f, bounds2.top + bounds2.height / 2.f);
-        text2.setPosition(center.x, center.y + 30);  // чуть ниже центра
-
-        window.draw(text1);
-        window.draw(text2);
+        drawCenteredText(u8"Вы проиграли!", 48, sf::Color::Black, -30.f);
+        drawCenteredText(u8"Нажмите ENTER для ещё одной попытки", 18, sf::Color::White, 30.f);
     }
+
     if (gameState == GameState::Won) {
-        sf::Text text1, text2;
-        text1.setFont(font);
-        text2.setFont(font);
-
-        std::string message1 = u8"Вы выиграли!";
-        text1.setString(sf::String::fromUtf8(message1.begin(), message1.end()));
-
-        std::string message2 = u8"Для ещё одной\nпопытки нажмите Enter!";
-        text2.setString(sf::String::fromUtf8(message2.begin(), message2.end()));
-
-        text1.setCharacterSize(48);
-        text2.setCharacterSize(24);
-
-        text1.setFillColor(sf::Color::Green);
-        text2.setFillColor(sf::Color::White);
-
-        sf::Vector2f center(width * tileSize / 2.f, height * tileSize / 2.f);
-
-        sf::FloatRect bounds1 = text1.getLocalBounds();
-        text1.setOrigin(bounds1.left + bounds1.width / 2.f, bounds1.top + bounds1.height / 2.f);
-        text1.setPosition(center.x, center.y - 30);
-
-        sf::FloatRect bounds2 = text2.getLocalBounds();
-        text2.setOrigin(bounds2.left + bounds2.width / 2.f, bounds2.top + bounds2.height / 2.f);
-        text2.setPosition(center.x, center.y + 30);
-
-        window.draw(text1);
-        window.draw(text2);
+        drawCenteredText(u8"Вы выиграли!", 48, sf::Color::Green, -30.f);
+        drawCenteredText(u8"Для ещё одной\nпопытки нажмите Enter!", 24, sf::Color::White, 30.f);
     }
+
     
 }
 

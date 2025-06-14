@@ -1,11 +1,12 @@
 #include "Game.h"
 
 Game::Game(int width, int height, int mines)
-    : window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper"),
+    : window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),  // без возможности ресайза
       board_(width, height, mines),
       menu_(width * tileSize_, height * tileSize_),
       currentScreen(GameScreen::MainMenu)
 {
+    window_.setFramerateLimit(60); // Ограничиваем частоту кадров до 60 FPS
 }
 
 
@@ -33,8 +34,10 @@ void Game::processEvents() {
                 else if (event.key.code == sf::Keyboard::Enter) {
                     int selected = menu_.getSelectedIndex();
                     if (selected == 0) { // Старт
-                        board_ = Board(10, 10, 5); // можно позже динамически задавать параметры
+                        board_ = Board(10, 10, 5);
+                        window_.create(sf::VideoMode(10 * tileSize_, 10 * tileSize_), "Minesweeper");
                         currentScreen = GameScreen::Playing;
+
                     } else if (selected == 1) { // Выбор уровня
                         // пока можно оставить пустым
                     } else if (selected == 2) { // Выход

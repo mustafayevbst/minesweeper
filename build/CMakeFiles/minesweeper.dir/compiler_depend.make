@@ -785,6 +785,7 @@ CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Deskto
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/hash_bytes.h \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/invoke.h \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/ios_base.h \
+  C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/istream.tcc \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/locale_classes.h \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/locale_classes.tcc \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/bits/locale_conv.h \
@@ -855,6 +856,8 @@ CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Deskto
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/initializer_list \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/ios \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/iosfwd \
+  C:/Program\ Files/C++/mingw64/include/c++/13.1.0/iostream \
+  C:/Program\ Files/C++/mingw64/include/c++/13.1.0/istream \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/iterator \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/locale \
   C:/Program\ Files/C++/mingw64/include/c++/13.1.0/map \
