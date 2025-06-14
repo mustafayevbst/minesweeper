@@ -10,9 +10,11 @@ set(SFML_DIR "${CMAKE_SOURCE_DIR}/external/SFML-2.6.2/lib/cmake/SFML")
 find_package(SFML 2.6 COMPONENTS graphics window system REQUIRED)
 
 add_executable(minesweeper
+    WIN32
     main.cpp
     src/Game.cpp
     src/Board.cpp
+    src/Menu.cpp
 )
 
 target_include_directories(minesweeper PRIVATE

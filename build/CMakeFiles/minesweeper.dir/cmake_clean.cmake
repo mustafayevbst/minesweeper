@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/minesweeper.dir/src/Board.cpp.obj.d"
   "CMakeFiles/minesweeper.dir/src/Game.cpp.obj"
   "CMakeFiles/minesweeper.dir/src/Game.cpp.obj.d"
+  "CMakeFiles/minesweeper.dir/src/Menu.cpp.obj"
+  "CMakeFiles/minesweeper.dir/src/Menu.cpp.obj.d"
   "libminesweeper.dll.a"
   "minesweeper.exe"
   "minesweeper.exe.manifest"

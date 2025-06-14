@@ -200,6 +200,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Menu.obj: src/Menu.cpp.obj
+.PHONY : src/Menu.obj
+
+# target to build an object file
+src/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/src/Menu.cpp.obj
+.PHONY : src/Menu.cpp.obj
+
+src/Menu.i: src/Menu.cpp.i
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Menu.obj
+	@echo ... src/Menu.i
+	@echo ... src/Menu.s
 .PHONY : help
 
 

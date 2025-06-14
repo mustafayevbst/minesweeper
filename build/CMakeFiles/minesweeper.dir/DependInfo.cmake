@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/main.cpp" "CMakeFiles/minesweeper.dir/main.cpp.obj" "gcc" "CMakeFiles/minesweeper.dir/main.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Board.cpp" "CMakeFiles/minesweeper.dir/src/Board.cpp.obj" "gcc" "CMakeFiles/minesweeper.dir/src/Board.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Game.cpp" "CMakeFiles/minesweeper.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/minesweeper.dir/src/Game.cpp.obj.d"
+  "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Menu.cpp" "CMakeFiles/minesweeper.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/minesweeper.dir/src/Menu.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

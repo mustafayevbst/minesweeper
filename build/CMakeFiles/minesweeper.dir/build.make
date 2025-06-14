@@ -116,11 +116,27 @@ CMakeFiles/minesweeper.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minesweeper.dir/src/Board.cpp.s"
 	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Board.cpp" -o CMakeFiles\minesweeper.dir\src\Board.cpp.s
 
+CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: CMakeFiles/minesweeper.dir/flags.make
+CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: CMakeFiles/minesweeper.dir/includes_CXX.rsp
+CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/src/Menu.cpp
+CMakeFiles/minesweeper.dir/src/Menu.cpp.obj: CMakeFiles/minesweeper.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minesweeper.dir/src/Menu.cpp.obj"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minesweeper.dir/src/Menu.cpp.obj -MF CMakeFiles\minesweeper.dir\src\Menu.cpp.obj.d -o CMakeFiles\minesweeper.dir\src\Menu.cpp.obj -c "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp"
+
+CMakeFiles/minesweeper.dir/src/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minesweeper.dir/src/Menu.cpp.i"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp" > CMakeFiles\minesweeper.dir\src\Menu.cpp.i
+
+CMakeFiles/minesweeper.dir/src/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minesweeper.dir/src/Menu.cpp.s"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp" -o CMakeFiles\minesweeper.dir\src\Menu.cpp.s
+
 # Object files for target minesweeper
 minesweeper_OBJECTS = \
 "CMakeFiles/minesweeper.dir/main.cpp.obj" \
 "CMakeFiles/minesweeper.dir/src/Game.cpp.obj" \
-"CMakeFiles/minesweeper.dir/src/Board.cpp.obj"
+"CMakeFiles/minesweeper.dir/src/Board.cpp.obj" \
+"CMakeFiles/minesweeper.dir/src/Menu.cpp.obj"
 
 # External object files for target minesweeper
 minesweeper_EXTERNAL_OBJECTS =
@@ -128,6 +144,7 @@ minesweeper_EXTERNAL_OBJECTS =
 minesweeper.exe: CMakeFiles/minesweeper.dir/main.cpp.obj
 minesweeper.exe: CMakeFiles/minesweeper.dir/src/Game.cpp.obj
 minesweeper.exe: CMakeFiles/minesweeper.dir/src/Board.cpp.obj
+minesweeper.exe: CMakeFiles/minesweeper.dir/src/Menu.cpp.obj
 minesweeper.exe: CMakeFiles/minesweeper.dir/build.make
 minesweeper.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
 minesweeper.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
@@ -135,7 +152,7 @@ minesweeper.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/
 minesweeper.exe: CMakeFiles/minesweeper.dir/linkLibs.rsp
 minesweeper.exe: CMakeFiles/minesweeper.dir/objects1.rsp
 minesweeper.exe: CMakeFiles/minesweeper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable minesweeper.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable minesweeper.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\minesweeper.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/bin" "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build"
 	"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/assets" "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/assets"
