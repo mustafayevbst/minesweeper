@@ -1,169 +1,35 @@
-# Сапёр
+<h2>Сборка проекта</h2>
 
-## Назначение программы
+<p>Для сборки проекта выполните следующие шаги:</p>
 
-Данная программа представляет собой реализацию классической игры **«Сапёр»** на языке программирования C++ с использованием графической библиотеки **SFML**.
+<ol>
+  <li>Клонируйте репозиторий:</li>
+</ol>
 
-## Функциональные возможности
-
-- Игровое поле разного размера и уровня сложности.
-- Главное меню с выбором действий:
-  - Старт игры.
-  - Выбор уровня сложности.
-  - Выход из игры.
-- Отображение оставшихся мин.
-- Отображение времени.
-- Определение победы и поражения.
-- Сохранение графики с помощью SFML.
-- Поддержка кроссплатформенной сборки через CMake.
-- Поддержка юнит-тестов с использованием Doctest.
-- Возможность генерации документации через Doxygen.
-
-## Установка и сборка
-
-### Клонирование репозитория
-
-```bash
-git clone https://github.com/mustafayevbst/minesweeper.git
+<pre><code>git clone https://github.com/mustafayevbst/minesweeper.git
 cd minesweeper
+</code></pre>
 
-Необходимые зависимости
-⚠️ ВНИМАНИЕ: установленная версия MinGW должна быть строго 13.1.0 (64-bit)
+<ol start="2">
+  <li>Создайте и перейдите в каталог сборки:</li>
+</ol>
 
-[Скачать MinGW 13.1.0 (64-bit)](https://github.com/brechtsanders/winlibs_mingw/releases/download/13.1.0-16.0.5-11.0.0-msvcrt-r5/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5.7z)
-
-Остальные зависимости:
-C++ компилятор с поддержкой C++17.
-
-CMake 3.10+.
-
-[Скачать SFML 2.6.2 (64-bit)](https://www.sfml-dev.org/files/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit.zip)
-
-Doctest (для модульных тестов).
-
-Doxygen (для генерации документации).
-
-Сборка проекта:
-
-bash
-Копировать
-Редактировать
-mkdir build
+<pre><code>mkdir build
 cd build
-cmake ..
-cmake --build .
-Запуск
-После сборки можно запустить исполняемый файл:
+</code></pre>
 
-bash
-Копировать
-Редактировать
-./minesweeper.exe
-Основные сценарии использования
-1. Запуск игры
-При запуске программы отображается главное меню:
+<ol start="3">
+  <li>Запустите CMake для генерации файлов сборки:</li>
+</ol>
 
-Старт — начинает новую игру.
+<pre><code>cmake ..
+</code></pre>
 
-Выбор уровня сложности — позволяет выбрать размер поля и количество мин.
+<ol start="4">
+  <li>Соберите проект:</li>
+</ol>
 
-Выход — завершает приложение.
+<pre><code>cmake --build .
+</code></pre>
 
-2. Игровой процесс
-ЛКМ — открыть ячейку.
-
-ПКМ — поставить/убрать флаг.
-
-При открытии всех ячеек без мин — игра считается выигранной.
-
-При открытии ячейки с миной — игрок проигрывает.
-
-Структура проекта
-bash
-Копировать
-Редактировать
-minesweeper/
-│
-├── src/
-│   ├── Board.h / Board.cpp       # Игровая логика поля
-│   ├── Game.h / Game.cpp         # Логика запуска игры, сцены, рендер
-│   ├── Menu.h / Menu.cpp         # Главное меню
-│   └── ... (остальные исходники)
-│
-├── assets/                       # Ресурсы (текстуры, шрифты)
-│
-├── tests/                        # Юнит-тесты (doctest)
-│
-├── docs/                         # Документация (doxygen)
-│
-├── CMakeLists.txt
-└── README.md
-
-Примеры кода
-Board — игровая логика поля
-cpp
-Копировать
-Редактировать
-class Board {
-public:
-    Board(int width, int height, int mines);
-    void revealTile(int x, int y);
-    void toggleFlag(int x, int y);
-    bool checkWin() const;
-    bool isGameOver() const;
-    void reset();
-private:
-    void generateMines();
-    void calculateNumbers();
-};
-Game — основной цикл приложения
-cpp
-Копировать
-Редактировать
-class Game {
-public:
-    Game(int width, int height, int mines);
-    void run();
-
-private:
-    void processEvents();
-    void update();
-    void render();
-    
-    sf::RenderWindow window_;
-    Board board_;
-};
-Menu — главное меню
-cpp
-Копировать
-Редактировать
-class Menu {
-public:
-    Menu(float width, float height);
-    void draw(sf::RenderWindow &window);
-    void moveUp();
-    void moveDown();
-    int getSelectedIndex() const;
-};
-Примеры работы приложения
-(Здесь в будущем можно добавить скриншоты работы приложения: например, главное меню, игровое поле, победа, поражение и т.д.)
-
-Пример:
-
-
-
-Запуск тестов
-bash
-Копировать
-Редактировать
-cd build
-ctest
-Генерация документации
-bash
-Копировать
-Редактировать
-doxygen Doxyfile
-Документация будет сгенерирована в папке docs/html/.
-
-Автор
-mustafayevbst
+<p>После успешной сборки исполняемый файл <code>minesweeper.exe</code> появится в каталоге <code>build</code>. Запустите его для начала игры.</p>
