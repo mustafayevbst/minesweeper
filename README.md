@@ -25,7 +25,7 @@
     <li><a href="https://github.com/brechtsanders/winlibs_mingw/releases/download/13.1.0-16.0.5-11.0.0-msvcrt-r5/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5.7z" target="_blank">Скачать MinGW 13.1.0</a></li>
     <li><strong>CMake</strong> версии 3.10 и выше</li>
     <li><strong>SFML 2.6.2 (64-bit)</strong></li>
-    <li><a href="https://www.sfml-dev.org/download.php" target="_blank">SFML 2.6.2</a></li>
+    <li><a href="https://www.sfml-dev.org/files/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit.zip" target="_blank">SFML 2.6.2 (64-bit)</a></li>
     <li>Doctest (для модульных тестов)</li>
     <li>Doxygen (для генерации документации)</li>
 </ul>
