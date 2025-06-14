@@ -71,15 +71,15 @@ cd build</code></pre>
 <h3>Игровое поле</h3>
 <p>После выбора уровня сложности создаётся игровое поле. Игрок должен открывать клетки, избегая мин:</p>
 
-<img src="images/gameplay.png" alt="Игровое поле">
+<img src="assets/gameplay.png" alt="Игровое поле">
 
 <h3>Победа</h3>
 <p>Игра завершается победой, если все клетки без мин открыты:</p>
-<img src="images/victory.png" alt="Победа">
+<img src="assets/victory.png" alt="Победа">
 
 <h3>Поражение</h3>
 <p>Игра завершается поражением при открытии клетки с миной:</p>
-<img src="images/defeat.png" alt="Поражение">
+<img src="assets/defeat.png" alt="Поражение">
 
 <h2>Пример кода (модуль Board)</h2>
 
