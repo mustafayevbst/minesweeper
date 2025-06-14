@@ -19,7 +19,7 @@ Board::Board(int w, int h, int m) : width(w), height(h), mines(m), tileSize(32) 
         }
     }
 
-    if (!font.loadFromFile("assets/arial.ttf")) {
+    if (!font.loadFromFile("assets/Zing Rust.ttf")) {
         std::cerr << "Font not found\n";
         std::exit(1);
     }

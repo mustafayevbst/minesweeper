@@ -1,26 +1,50 @@
-Game::Game() : window_(sf::VideoMode(640, 640, 32), "Minesweeper"), board_(10, 10, 15) {}
+#include "Game.h"
 
-void Game::run() {
-    while (window_.isOpen()) {
-        sf::Event event;
-        while (window_.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
-                window_.close();
-            else if (event.type == sf::Event::MouseButtonPressed) {
-                int x = event.mouseButton.x / board_.getTileSize();
-                int y = event.mouseButton.y / board_.getTileSize();
-                if (event.mouseButton.button == sf::Mouse::Button::Left)
-                    board_.reveal(x, y);
-                else if (event.mouseButton.button == sf::Mouse::Button::Right)
-                    board_.toggleFlag(x, y);
-            }
-        }
+Game::Game(int size, int mines)
+    : window_(sf::VideoMode(size * tileSize_, size * tileSize_), "Minesweeper"),
+      board_(size, mines)
+{
+}
+
+void Game::run()
+{
+    while (window_.isOpen())
+    {
+        processEvents();
         render();
     }
 }
 
+void Game::processEvents() {
+    sf::Event event;
+    while (window_.pollEvent(event)) {
+        switch (event.type) {
+            case sf::Event::Closed:
+                window_.close();
+                break;
+
+            case sf::Event::MouseButtonPressed: {
+                int x = event.mouseButton.x / tileSize_;
+                int y = event.mouseButton.y / tileSize_;
+
+                if (event.mouseButton.button == sf::Mouse::Button::Left) {
+                    board_.reveal(x, y);
+                } else if (event.mouseButton.button == sf::Mouse::Button::Right) {
+                    board_.toggleFlag(x, y);
+                }
+                break;
+            }
+
+            default:
+                break;
+        }
+    }
+}
+
+
+
 void Game::render() {
-    window_.clear(sf::Color::White);
-    board_.draw(window_);
+    window_.clear();
+    board_.draw(window_);  // <-- замените render на draw
     window_.display();
 }
