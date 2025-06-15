@@ -5,12 +5,11 @@
 
 class Menu {
 public:
-    Menu(float width, float height);
+    Menu(float width, float height, const std::vector<std::wstring>& labels);
     void draw(sf::RenderWindow& window);
     void moveUp();
     void moveDown();
     int getSelectedIndex() const;
-
 private:
     int selectedIndex;
     sf::Font font;

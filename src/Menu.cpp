@@ -1,43 +1,34 @@
 #include "Menu.h"
 #include <iostream>
 
-Menu::Menu(float width, float height) 
+Menu::Menu(float width, float height, const std::vector<std::wstring>& labels)
 {
-    if (!font.loadFromFile("assets/arial.ttf")) 
+    if (!font.loadFromFile("assets/ZingRust.ttf")) 
     {
         std::cerr << "Font not found\n";
         std::exit(EXIT_FAILURE);
     }
 
-    std::vector<std::wstring> labels = {
-        L"Старт",
-        L"Выбрать сложность",
-        L"Выйти"
-    };
-
     for (size_t i = 0; i < labels.size(); ++i) {
-    sf::Text text;
-    text.setFont(font);
-    text.setString(sf::String(labels[i]));
-    text.setCharacterSize(40);
-    text.setFillColor(i == 0 ? sf::Color::Red : sf::Color::White);
+        sf::Text text;
+        text.setFont(font);
+        text.setString(sf::String(labels[i]));
+        text.setCharacterSize(40);
+        text.setFillColor(i == 0 ? sf::Color::Red : sf::Color::Blue);
 
-    // Получаем ширину текста
-    sf::FloatRect textRect = text.getLocalBounds();
+        sf::FloatRect textRect = text.getLocalBounds();
 
-    // Ставим позицию по центру экрана с учётом ширины текста
-    text.setPosition(
-        width / 2.f - textRect.width / 2.f,
-        height / 2.f - 60.f + i * 60.f
-    );
+        text.setPosition(
+            width / 2.f - textRect.width / 2.f,
+            height / 2.f - 60.f + i * 60.f
+        );
 
-    menuItems.push_back(text);
-
-    std::wcout << L"Loaded menu item: " << labels[i] << std::endl;
-}
+        menuItems.push_back(text);
+    }
 
     selectedIndex = 0;
 }
+
 
 
 
@@ -49,7 +40,7 @@ void Menu::draw(sf::RenderWindow& window) {
 
 void Menu::moveUp() {
     if (selectedIndex > 0) {
-        menuItems[selectedIndex].setFillColor(sf::Color::White);
+        menuItems[selectedIndex].setFillColor(sf::Color::Blue);
         selectedIndex--;
         menuItems[selectedIndex].setFillColor(sf::Color::Red);
     }
@@ -57,7 +48,7 @@ void Menu::moveUp() {
 
 void Menu::moveDown() {
     if (selectedIndex < menuItems.size() - 1) {
-        menuItems[selectedIndex].setFillColor(sf::Color::White);
+        menuItems[selectedIndex].setFillColor(sf::Color::Blue);
         selectedIndex++;
         menuItems[selectedIndex].setFillColor(sf::Color::Red);
     }

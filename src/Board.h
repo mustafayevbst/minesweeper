@@ -9,7 +9,7 @@ enum class GameState {
 };
 class Board {
 public:
-    Board(int w, int h, int m);
+    Board(int w, int h, int m, int tilesize);
     void reveal(int x, int y);
     void toggleFlag(int x, int y);
     void draw(sf::RenderWindow& window) const;
@@ -20,11 +20,12 @@ public:
     bool checkWin() const;
 private:
     int width, height, mines;
-    int tileSize;
     std::vector<std::vector<char>> field;
     std::vector<std::vector<bool>> revealed;
     std::vector<std::vector<bool>> flagged;
     sf::Font font;
+
+    int tileSize;
 
     // Добавьте сюда:
     sf::Texture tilesTexture;

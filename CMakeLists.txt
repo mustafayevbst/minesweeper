@@ -26,11 +26,12 @@ target_link_libraries(minesweeper PRIVATE
     sfml-window
     sfml-system
 )
+
 add_custom_command(TARGET minesweeper POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     "${CMAKE_SOURCE_DIR}/external/SFML-2.6.2/bin"
     $<TARGET_FILE_DIR:minesweeper>
     COMMAND ${CMAKE_COMMAND} -E copy_directory
-    "${CMAKE_SOURCE_DIR}/assets"
+    "${CMAKE_SOURCE_DIR}/assets/gameassets"
     $<TARGET_FILE_DIR:minesweeper>/assets
 )

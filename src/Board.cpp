@@ -2,24 +2,15 @@
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
+#include "Game.h"
 
-Board::Board(int w, int h, int m) : width(w), height(h), mines(m), tileSize(32) {
+Board::Board(int w, int h, int m, int tilesize) : width(w), height(h), mines(m), tileSize(tilesize) {
     field = std::vector<std::vector<char>>(width, std::vector<char>(height, '.'));
     revealed = std::vector<std::vector<bool>>(width, std::vector<bool>(height, false));
     flagged = std::vector<std::vector<bool>>(width, std::vector<bool>(height, false));
 
     std::srand(std::time(nullptr));
-    int placed = 0;
-    while (placed < mines) {
-        int x = std::rand() % width;
-        int y = std::rand() % height;
-        if (field[x][y] != '*') {
-            field[x][y] = '*';
-            placed++;
-        }
-    }
-
-    if (!font.loadFromFile("assets/arial.ttf")) {
+    if (!font.loadFromFile("assets/ZingRust.ttf")) {
         std::cerr << "Font not found\n";
         std::exit(1);
     }
@@ -123,19 +114,19 @@ void Board::draw(sf::RenderWindow& window) const {
     };
 
     if (gameState == GameState::Lost) {
-        drawCenteredText(u8"Вы проиграли!", 48, sf::Color::Black, -30.f);
-        drawCenteredText(u8"Нажмите ENTER для ещё одной попытки", 18, sf::Color::White, 30.f);
+        drawCenteredText(u8"Вы проиграли!", 48, sf::Color::Red, -30.f);
+        drawCenteredText(u8"Для ещё одной попытки нажмите Enter!", 16, sf::Color::White, 30.f);
+        drawCenteredText(u8"Для выхода в гл. меню нажмите Escape!", 16, sf::Color::White, 90.f);
     }
 
     if (gameState == GameState::Won) {
         drawCenteredText(u8"Вы выиграли!", 48, sf::Color::Green, -30.f);
-        drawCenteredText(u8"Для ещё одной\nпопытки нажмите Enter!", 24, sf::Color::White, 30.f);
+        drawCenteredText(u8"Для ещё одной попытки нажмите Enter!", 16, sf::Color::White, 30.f);
+        drawCenteredText(u8"Для выхода в гл. меню нажмите Escape!", 16, sf::Color::White, 90.f);
     }
 
     
 }
-
-
 
 int Board::getTileSize() const {
     return tileSize;
