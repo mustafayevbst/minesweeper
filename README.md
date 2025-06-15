@@ -66,6 +66,21 @@ cd build</code></pre>
 
 <img src="assets/githubassets/main_menu.png" alt="Главное меню">
 
+<h3>Уровни сложности</h3>
+<p>На выбор игроку дается три степени сложности:</p>
+
+<p>Простой(80 полей, 10 мин):</p>
+
+<img src="assets/githubassets/simplebg.png" alt="Игровое поле">
+
+<p>Средний(256 полей, 40 мин):</p>
+
+<img src="assets/githubassets/mediumbg.png" alt="Игровое поле">
+
+<p>Сложный(480 полей, 99 мин):</p>
+
+<img src="assets/githubassets/hardbg.png" alt="Игровое поле">
+
 <h3>Игровое поле</h3>
 <p>После выбора уровня сложности создаётся игровое поле. Игрок должен открывать клетки, избегая мин:</p>
 
