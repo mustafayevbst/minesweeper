@@ -1,35 +1,41 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 #include <vector>
 
-enum class CellState { Hidden, Revealed, Flagged };
-enum class GameState { Playing, Won, Lost };
-
-/**
- * @brief Класс представляет минное поле.
- */
+enum class GameState {
+    Playing,
+    Lost,
+    Won
+};
 class Board {
 public:
-    Board(int size, int mines);
-    void reset(int size, int mines);
+    Board(int w, int h, int m, int tilesize);
     void reveal(int x, int y);
     void toggleFlag(int x, int y);
-    int countMinesAround(int x, int y) const;
-    bool isMine(int x, int y) const;
-    CellState getCellState(int x, int y) const;
-    char getCellValue(int x, int y) const;
-    GameState getGameState() const;
-    int getSize() const;
-    int getRemainingFlags() const;
-
+    void draw(sf::RenderWindow& window) const;
+    int getTileSize() const;
+    void placeMine(int x, int y);
+    GameState gameState = GameState::Playing;
+    void clickCell(int x, int y);  // Метод для обработки клика
+    bool checkWin() const;
 private:
-    void placeMines();
-    void revealRecursive(int x, int y);
-    void checkWin();
+    int width, height, mines;
+    std::vector<std::vector<char>> field;
+    std::vector<std::vector<bool>> revealed;
+    std::vector<std::vector<bool>> flagged;
+    sf::Font font;
 
-    int size_;
-    int mines_;
-    int revealedCount_;
-    GameState gameState_;
-    std::vector<std::vector<char>> field_;
-    std::vector<std::vector<CellState>> state_;
+    int tileSize;
+
+    // Добавьте сюда:
+    sf::Texture tilesTexture;
+
+    bool firstClick = true;
+    void placeMines(int firstClickX, int firstClickY); 
+    bool isInSafeZone(int x, int y, int safeX, int safeY) const;
+    
+    int countMines(int x, int y) const;
+    void revealEmpty(int x, int y);
+    GameState getGameState() const { return gameState; }
+    void revealAll();
 };
