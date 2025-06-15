@@ -106,6 +106,7 @@ enum class GameState {
     Lost,
     Won
 };
+
 class Board {
 public:
     Board(int w, int h, int m, int tilesize);
@@ -115,29 +116,27 @@ public:
     int getTileSize() const;
     void placeMine(int x, int y);
     GameState gameState = GameState::Playing;
-    void clickCell(int x, int y);  // Метод для обработки клика
+    void clickCell(int x, int y);
     bool checkWin() const;
+
 private:
     int width, height, mines;
     std::vector<std::vector<char>> field;
     std::vector<std::vector<bool>> revealed;
     std::vector<std::vector<bool>> flagged;
     sf::Font font;
-
     int tileSize;
-
-    // Добавьте сюда:
     sf::Texture tilesTexture;
-
     bool firstClick = true;
+
     void placeMines(int firstClickX, int firstClickY); 
     bool isInSafeZone(int x, int y, int safeX, int safeY) const;
-    
     int countMines(int x, int y) const;
     void revealEmpty(int x, int y);
     GameState getGameState() const { return gameState; }
     void revealAll();
 };
+
 </code></pre>
 
 <h2>Пример кода (модуль Game)</h2>
@@ -147,7 +146,6 @@ private:
 #include "Menu.h"
 #include <SFML/Graphics.hpp>
 #include "Board.h"
-
 
 enum class GameScreen {
     MainMenu,
@@ -165,21 +163,11 @@ public:
     int currentMines_;
     void resetGame();
 
-
-
 private:
     void processEvents();
     void update();
     void render();
     void startNewGame(int width, int height, int mines);
-    sf::Texture simpleBgTexture_;
-    sf::Texture mediumBgTexture_;
-    sf::Texture hardBgTexture_;
-
-    sf::Sprite simpleBgSprite_;
-    sf::Sprite mediumBgSprite_;
-    sf::Sprite hardBgSprite_;
-
 
     int tileSize_ = 32;
     Board board_;
@@ -188,11 +176,18 @@ private:
     sf::Texture backgroundTexture_;
     sf::Sprite backgroundSprite_;
 
-    
-    GameScreen currentScreen = GameScreen::MainMenu;  // <--- исправлено
+    sf::Texture simpleBgTexture_;
+    sf::Texture mediumBgTexture_;
+    sf::Texture hardBgTexture_;
+    sf::Sprite simpleBgSprite_;
+    sf::Sprite mediumBgSprite_;
+    sf::Sprite hardBgSprite_;
+
+    GameScreen currentScreen = GameScreen::MainMenu;
     Menu difficultyMenu_;
     Menu menu_;
 };
+
 </code></pre>
 
 <h2>Генерация документации</h2>
