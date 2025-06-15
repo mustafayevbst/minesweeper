@@ -25,7 +25,6 @@
     <li><a href="https://github.com/brechtsanders/winlibs_mingw/releases/download/13.1.0-16.0.5-11.0.0-msvcrt-r5/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5.7z" target="_blank">Скачать MinGW 13.1.0</a></li>
     <li><strong>CMake</strong> версии 3.10 и выше</li>
     <li><strong>SFML 2.6.2 (64-bit)</strong></li>
-    <li><a href="https://www.sfml-dev.org/files/SFML-2.6.2-windows-gcc-13.1.0-mingw-64-bit.zip" target="_blank">SFML 2.6.2 (64-bit)</a></li>
     <li>Doctest (для модульных тестов)</li>
     <li>Doxygen (для генерации документации)</li>
 </ul>
@@ -66,20 +65,20 @@ cd build</code></pre>
     <li><strong>Выход</strong> — завершить работу программы.</li>
 </ul>
 
-<img src="assets/main_menu.png" alt="Главное меню">
+<img src="assets/githubassets/main_menu.png" alt="Главное меню">
 
 <h3>Игровое поле</h3>
 <p>После выбора уровня сложности создаётся игровое поле. Игрок должен открывать клетки, избегая мин:</p>
 
-<img src="assets/gameplay.png" alt="Игровое поле">
+<img src="assets/githubassets/gameplay.png" alt="Игровое поле">
 
 <h3>Победа</h3>
 <p>Игра завершается победой, если все клетки без мин открыты:</p>
-<img src="assets/victory.png" alt="Победа">
+<img src="assets/githubassets/victory.png" alt="Победа">
 
 <h3>Поражение</h3>
 <p>Игра завершается поражением при открытии клетки с миной:</p>
-<img src="assets/defeat.png" alt="Поражение">
+<img src="assets/githubassets/defeat.png" alt="Поражение">
 
 <h2>Пример кода (модуль Board)</h2>
 
