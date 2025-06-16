@@ -1,11 +1,14 @@
 #include "Game.h"
 #include <iostream>
-Game::Game(int width, int height, int mines):
+Game::Game(int width, int height, int mines) :
     window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),
     board_(width, height, mines, tileSize_),
     menu_(window_.getSize().x, window_.getSize().y, { L"Старт", L"Выбрать сложность", L"Выйти" }),
     difficultyMenu_(window_.getSize().x, window_.getSize().y, { L"Простой", L"Средний", L"Сложный" }),
-    currentScreen(GameScreen::MainMenu)
+    currentScreen(GameScreen::MainMenu),
+    currentWidth_(width),
+    currentHeight_(height),
+    currentMines_(mines)
 {
     window_.setFramerateLimit(60);
     if (!backgroundTexture_.loadFromFile("assets/background.png")) {
@@ -113,21 +116,20 @@ void Game::processEvents() {
                     board_.clickCell(x, y);
                 else if (event.mouseButton.button == sf::Mouse::Right)
                     board_.toggleFlag(x, y);
-        }
-        else if (event.type == sf::Event::KeyPressed) {
-            if (board_.gameState == GameState::Won || board_.gameState == GameState::Lost) {
-                if (event.key.code == sf::Keyboard::Enter) {
-                  resetGame();
-                }
-                else if (event.key.code == sf::Keyboard::Escape) {
-                    window_.create(sf::VideoMode(480, 480), "Minesweeper", sf::Style::Titlebar | sf::Style::Close);
-                    currentScreen = GameScreen::MainMenu;
+            }
+            else if (event.type == sf::Event::KeyPressed) {
+                if (board_.gameState == GameState::Won || board_.gameState == GameState::Lost) {
+                    if (event.key.code == sf::Keyboard::Enter) {
+                    resetGame();
+                    }
+                    else if (event.key.code == sf::Keyboard::Escape) {
+                        window_.create(sf::VideoMode(480, 480), "Minesweeper", sf::Style::Titlebar | sf::Style::Close);
+                        currentScreen = GameScreen::MainMenu;
+                    }
                 }
             }
         }
     }
-}
-
 }
 void Game::render() {
     window_.clear();
