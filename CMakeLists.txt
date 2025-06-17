@@ -52,20 +52,16 @@ if(BUILD_TESTS)
 
     target_include_directories(tests_board PRIVATE
         src
-        test  # если там есть заголовки тестов
+	"${CMAKE_SOURCE_DIR}/external/doctest"
     )
 
-    # Добавляем Doctest (предполагаем, что doctest.hpp лежит в external/doctest)
-    target_include_directories(tests_board PRIVATE "${CMAKE_SOURCE_DIR}/external/doctest")
-
-    # Линковка SFML, если Board.cpp зависит от SFML
     target_link_libraries(tests_board PRIVATE
         sfml-graphics
         sfml-window
         sfml-system
     )
 
-    # Добавляем тест в ctest
+    #Имя теста tests_board
     add_test(NAME BoardTests COMMAND tests_board)
 
     add_executable(tests_game
@@ -74,16 +70,19 @@ if(BUILD_TESTS)
         src/Board.cpp
         src/Menu.cpp
     )
+
     target_include_directories(tests_game PRIVATE
         src
-        test
         "${CMAKE_SOURCE_DIR}/external/doctest"
     )
+
     target_link_libraries(tests_game PRIVATE
         sfml-graphics
         sfml-window
         sfml-system
     )
+
+    #Имя теста tests_game
     add_test(NAME GameTests COMMAND tests_game)
 
     add_executable(tests_menu
@@ -93,7 +92,6 @@ if(BUILD_TESTS)
 
     target_include_directories(tests_menu PRIVATE
        src
-       test
        ${CMAKE_SOURCE_DIR}/external/doctest
     ) 
 
@@ -103,6 +101,7 @@ if(BUILD_TESTS)
        sfml-system
     )
 
+    #Имя теста tests_menu
     add_test(NAME MenuTests COMMAND tests_menu)
 
 endif()
