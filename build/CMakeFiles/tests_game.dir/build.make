@@ -52,17 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build"
-=======
-CMAKE_SOURCE_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests_game.dir/depend.make
@@ -80,7 +73,6 @@ CMakeFiles/tests_game.dir/codegen:
 
 CMakeFiles/tests_game.dir/test/test_game.cpp.obj: CMakeFiles/tests_game.dir/flags.make
 CMakeFiles/tests_game.dir/test/test_game.cpp.obj: CMakeFiles/tests_game.dir/includes_CXX.rsp
-<<<<<<< HEAD
 CMakeFiles/tests_game.dir/test/test_game.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/test/test_game.cpp
 CMakeFiles/tests_game.dir/test/test_game.cpp.obj: CMakeFiles/tests_game.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_game.dir/test/test_game.cpp.obj"
@@ -138,65 +130,6 @@ CMakeFiles/tests_game.dir/src/Menu.cpp.i: cmake_force
 CMakeFiles/tests_game.dir/src/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_game.dir/src/Menu.cpp.s"
 	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp" -o CMakeFiles\tests_game.dir\src\Menu.cpp.s
-=======
-CMakeFiles/tests_game.dir/test/test_game.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/test/test_game.cpp
-CMakeFiles/tests_game.dir/test/test_game.cpp.obj: CMakeFiles/tests_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_game.dir/test/test_game.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_game.dir/test/test_game.cpp.obj -MF CMakeFiles\tests_game.dir\test\test_game.cpp.obj.d -o CMakeFiles\tests_game.dir\test\test_game.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_game.cpp
-
-CMakeFiles/tests_game.dir/test/test_game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_game.dir/test/test_game.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_game.cpp > CMakeFiles\tests_game.dir\test\test_game.cpp.i
-
-CMakeFiles/tests_game.dir/test/test_game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_game.dir/test/test_game.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_game.cpp -o CMakeFiles\tests_game.dir\test\test_game.cpp.s
-
-CMakeFiles/tests_game.dir/src/Game.cpp.obj: CMakeFiles/tests_game.dir/flags.make
-CMakeFiles/tests_game.dir/src/Game.cpp.obj: CMakeFiles/tests_game.dir/includes_CXX.rsp
-CMakeFiles/tests_game.dir/src/Game.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Game.cpp
-CMakeFiles/tests_game.dir/src/Game.cpp.obj: CMakeFiles/tests_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests_game.dir/src/Game.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_game.dir/src/Game.cpp.obj -MF CMakeFiles\tests_game.dir\src\Game.cpp.obj.d -o CMakeFiles\tests_game.dir\src\Game.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Game.cpp
-
-CMakeFiles/tests_game.dir/src/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_game.dir/src/Game.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Game.cpp > CMakeFiles\tests_game.dir\src\Game.cpp.i
-
-CMakeFiles/tests_game.dir/src/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_game.dir/src/Game.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Game.cpp -o CMakeFiles\tests_game.dir\src\Game.cpp.s
-
-CMakeFiles/tests_game.dir/src/Board.cpp.obj: CMakeFiles/tests_game.dir/flags.make
-CMakeFiles/tests_game.dir/src/Board.cpp.obj: CMakeFiles/tests_game.dir/includes_CXX.rsp
-CMakeFiles/tests_game.dir/src/Board.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Board.cpp
-CMakeFiles/tests_game.dir/src/Board.cpp.obj: CMakeFiles/tests_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests_game.dir/src/Board.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_game.dir/src/Board.cpp.obj -MF CMakeFiles\tests_game.dir\src\Board.cpp.obj.d -o CMakeFiles\tests_game.dir\src\Board.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp
-
-CMakeFiles/tests_game.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_game.dir/src/Board.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp > CMakeFiles\tests_game.dir\src\Board.cpp.i
-
-CMakeFiles/tests_game.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_game.dir/src/Board.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp -o CMakeFiles\tests_game.dir\src\Board.cpp.s
-
-CMakeFiles/tests_game.dir/src/Menu.cpp.obj: CMakeFiles/tests_game.dir/flags.make
-CMakeFiles/tests_game.dir/src/Menu.cpp.obj: CMakeFiles/tests_game.dir/includes_CXX.rsp
-CMakeFiles/tests_game.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Menu.cpp
-CMakeFiles/tests_game.dir/src/Menu.cpp.obj: CMakeFiles/tests_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests_game.dir/src/Menu.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_game.dir/src/Menu.cpp.obj -MF CMakeFiles\tests_game.dir\src\Menu.cpp.obj.d -o CMakeFiles\tests_game.dir\src\Menu.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Menu.cpp
-
-CMakeFiles/tests_game.dir/src/Menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_game.dir/src/Menu.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Menu.cpp > CMakeFiles\tests_game.dir\src\Menu.cpp.i
-
-CMakeFiles/tests_game.dir/src/Menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_game.dir/src/Menu.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Menu.cpp -o CMakeFiles\tests_game.dir\src\Menu.cpp.s
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 # Object files for target tests_game
 tests_game_OBJECTS = \
@@ -213,7 +146,6 @@ tests_game.exe: CMakeFiles/tests_game.dir/src/Game.cpp.obj
 tests_game.exe: CMakeFiles/tests_game.dir/src/Board.cpp.obj
 tests_game.exe: CMakeFiles/tests_game.dir/src/Menu.cpp.obj
 tests_game.exe: CMakeFiles/tests_game.dir/build.make
-<<<<<<< HEAD
 tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
 tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
 tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
@@ -221,15 +153,6 @@ tests_game.exe: CMakeFiles/tests_game.dir/linkLibs.rsp
 tests_game.exe: CMakeFiles/tests_game.dir/objects1.rsp
 tests_game.exe: CMakeFiles/tests_game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests_game.exe"
-=======
-tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
-tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
-tests_game.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
-tests_game.exe: CMakeFiles/tests_game.dir/linkLibs.rsp
-tests_game.exe: CMakeFiles/tests_game.dir/objects1.rsp
-tests_game.exe: CMakeFiles/tests_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests_game.exe"
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests_game.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -241,10 +164,6 @@ CMakeFiles/tests_game.dir/clean:
 .PHONY : CMakeFiles/tests_game.dir/clean
 
 CMakeFiles/tests_game.dir/depend:
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles\tests_game.dir\DependInfo.cmake" "--color=$(COLOR)"
-=======
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles\tests_game.dir\DependInfo.cmake "--color=$(COLOR)"
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 .PHONY : CMakeFiles/tests_game.dir/depend
 

@@ -3,10 +3,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
-<<<<<<< HEAD
-
-=======
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 Board::Board(int w, int h, int m, int tilesize) : width(w), height(h), mines(m), tileSize(tilesize) {
     field = std::vector<std::vector<char>>(width, std::vector<char>(height, '.'));

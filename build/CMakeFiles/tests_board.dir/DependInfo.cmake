@@ -8,13 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-<<<<<<< HEAD
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Board.cpp" "CMakeFiles/tests_board.dir/src/Board.cpp.obj" "gcc" "CMakeFiles/tests_board.dir/src/Board.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/test/test_board.cpp" "CMakeFiles/tests_board.dir/test/test_board.cpp.obj" "gcc" "CMakeFiles/tests_board.dir/test/test_board.cpp.obj.d"
-=======
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Board.cpp" "CMakeFiles/tests_board.dir/src/Board.cpp.obj" "gcc" "CMakeFiles/tests_board.dir/src/Board.cpp.obj.d"
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/test/test_board.cpp" "CMakeFiles/tests_board.dir/test/test_board.cpp.obj" "gcc" "CMakeFiles/tests_board.dir/test/test_board.cpp.obj.d"
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   )
 
 # Targets to which this target links which contain Fortran sources.

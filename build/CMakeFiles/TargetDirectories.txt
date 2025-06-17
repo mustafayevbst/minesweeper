@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/minesweeper.dir
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/tests_board.dir
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/tests_game.dir
@@ -6,12 +5,3 @@ C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CM
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/test.dir
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/edit_cache.dir
 C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/CMakeFiles/rebuild_cache.dir
-=======
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/minesweeper.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/tests_board.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/tests_game.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/tests_menu.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/test.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/edit_cache.dir
-C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/CMakeFiles/rebuild_cache.dir
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca

@@ -56,17 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build"
-=======
-CMAKE_SOURCE_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -103,15 +96,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles 0
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 .PHONY : all
 
 # The main clean target

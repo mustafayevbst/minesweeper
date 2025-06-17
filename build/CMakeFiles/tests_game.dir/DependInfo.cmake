@@ -8,17 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-<<<<<<< HEAD
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Board.cpp" "CMakeFiles/tests_game.dir/src/Board.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Board.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Game.cpp" "CMakeFiles/tests_game.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Game.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Menu.cpp" "CMakeFiles/tests_game.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Menu.cpp.obj.d"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/test/test_game.cpp" "CMakeFiles/tests_game.dir/test/test_game.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/test/test_game.cpp.obj.d"
-=======
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Board.cpp" "CMakeFiles/tests_game.dir/src/Board.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Board.cpp.obj.d"
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Game.cpp" "CMakeFiles/tests_game.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Game.cpp.obj.d"
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Menu.cpp" "CMakeFiles/tests_game.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/src/Menu.cpp.obj.d"
-  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/test/test_game.cpp" "CMakeFiles/tests_game.dir/test/test_game.cpp.obj" "gcc" "CMakeFiles/tests_game.dir/test/test_game.cpp.obj.d"
->>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   )
 
 # Targets to which this target links which contain Fortran sources.
