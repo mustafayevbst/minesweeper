@@ -52,10 +52,17 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build"
+=======
+CMAKE_SOURCE_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests_board.dir/depend.make
@@ -73,6 +80,7 @@ CMakeFiles/tests_board.dir/codegen:
 
 CMakeFiles/tests_board.dir/test/test_board.cpp.obj: CMakeFiles/tests_board.dir/flags.make
 CMakeFiles/tests_board.dir/test/test_board.cpp.obj: CMakeFiles/tests_board.dir/includes_CXX.rsp
+<<<<<<< HEAD
 CMakeFiles/tests_board.dir/test/test_board.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/test/test_board.cpp
 CMakeFiles/tests_board.dir/test/test_board.cpp.obj: CMakeFiles/tests_board.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_board.dir/test/test_board.cpp.obj"
@@ -100,6 +108,35 @@ CMakeFiles/tests_board.dir/src/Board.cpp.i: cmake_force
 CMakeFiles/tests_board.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_board.dir/src/Board.cpp.s"
 	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Board.cpp" -o CMakeFiles\tests_board.dir\src\Board.cpp.s
+=======
+CMakeFiles/tests_board.dir/test/test_board.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/test/test_board.cpp
+CMakeFiles/tests_board.dir/test/test_board.cpp.obj: CMakeFiles/tests_board.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_board.dir/test/test_board.cpp.obj"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_board.dir/test/test_board.cpp.obj -MF CMakeFiles\tests_board.dir\test\test_board.cpp.obj.d -o CMakeFiles\tests_board.dir\test\test_board.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_board.cpp
+
+CMakeFiles/tests_board.dir/test/test_board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_board.dir/test/test_board.cpp.i"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_board.cpp > CMakeFiles\tests_board.dir\test\test_board.cpp.i
+
+CMakeFiles/tests_board.dir/test/test_board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_board.dir/test/test_board.cpp.s"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\test\test_board.cpp -o CMakeFiles\tests_board.dir\test\test_board.cpp.s
+
+CMakeFiles/tests_board.dir/src/Board.cpp.obj: CMakeFiles/tests_board.dir/flags.make
+CMakeFiles/tests_board.dir/src/Board.cpp.obj: CMakeFiles/tests_board.dir/includes_CXX.rsp
+CMakeFiles/tests_board.dir/src/Board.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/src/Board.cpp
+CMakeFiles/tests_board.dir/src/Board.cpp.obj: CMakeFiles/tests_board.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests_board.dir/src/Board.cpp.obj"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_board.dir/src/Board.cpp.obj -MF CMakeFiles\tests_board.dir\src\Board.cpp.obj.d -o CMakeFiles\tests_board.dir\src\Board.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp
+
+CMakeFiles/tests_board.dir/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_board.dir/src/Board.cpp.i"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp > CMakeFiles\tests_board.dir\src\Board.cpp.i
+
+CMakeFiles/tests_board.dir/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_board.dir/src/Board.cpp.s"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\src\Board.cpp -o CMakeFiles\tests_board.dir\src\Board.cpp.s
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 # Object files for target tests_board
 tests_board_OBJECTS = \
@@ -112,6 +149,7 @@ tests_board_EXTERNAL_OBJECTS =
 tests_board.exe: CMakeFiles/tests_board.dir/test/test_board.cpp.obj
 tests_board.exe: CMakeFiles/tests_board.dir/src/Board.cpp.obj
 tests_board.exe: CMakeFiles/tests_board.dir/build.make
+<<<<<<< HEAD
 tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
 tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
 tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
@@ -119,6 +157,15 @@ tests_board.exe: CMakeFiles/tests_board.dir/linkLibs.rsp
 tests_board.exe: CMakeFiles/tests_board.dir/objects1.rsp
 tests_board.exe: CMakeFiles/tests_board.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests_board.exe"
+=======
+tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
+tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
+tests_board.exe: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
+tests_board.exe: CMakeFiles/tests_board.dir/linkLibs.rsp
+tests_board.exe: CMakeFiles/tests_board.dir/objects1.rsp
+tests_board.exe: CMakeFiles/tests_board.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests_board.exe"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests_board.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +177,10 @@ CMakeFiles/tests_board.dir/clean:
 .PHONY : CMakeFiles/tests_board.dir/clean
 
 CMakeFiles/tests_board.dir/depend:
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles\tests_board.dir\DependInfo.cmake" "--color=$(COLOR)"
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\123\minesweeper\build\CMakeFiles\tests_board.dir\DependInfo.cmake "--color=$(COLOR)"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 .PHONY : CMakeFiles/tests_board.dir/depend
 

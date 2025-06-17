@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 BoardTests 1 0.660431
 GameTests 1 1.04741
 MenuTests 1 0.361716
+=======
+BoardTests 1 0.734276
+GameTests 1 1.20569
+MenuTests 1 0.42541
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 ---

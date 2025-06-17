@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+<<<<<<< HEAD
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompiler.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake"
@@ -103,6 +104,24 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/FeatureTesting.cmake"
+=======
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Linker/GNU.cmake"
@@ -110,7 +129,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake"
+<<<<<<< HEAD
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Determine-CXX.cmake"
+=======
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
@@ -120,17 +142,30 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
+<<<<<<< HEAD
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/CMakeLists.txt"
+=======
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/CMakeLists.txt"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeRCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeSystem.cmake"
+<<<<<<< HEAD
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfig.cmake"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfigDependencies.cmake"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfigVersion.cmake"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets-debug.cmake"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
   "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets.cmake"
+=======
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfig.cmake"
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets-debug.cmake"
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/external/SFML-2.6.2/lib/cmake/SFML/SFMLSharedTargets.cmake"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   )
 
 # The corresponding makefile is:
@@ -141,12 +176,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+<<<<<<< HEAD
   "CMakeFiles/3.31.5/CMakeSystem.cmake"
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeRCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.5/CMakeCXXCompiler.cmake"
+=======
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

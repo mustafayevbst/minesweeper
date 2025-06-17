@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Start testing: Jun 17 13:47 RTZ 2 (çèìà)
 ----------------------------------------------------------
 1/3 Testing: BoardTests
@@ -5,6 +6,15 @@ Start testing: Jun 17 13:47 RTZ 2 (çèìà)
 Command: "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/tests_board.exe"
 Directory: C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build
 "BoardTests" start time: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Start testing: Jun 17 12:53 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/3 Testing: BoardTests
+1/3 Test: BoardTests
+Command: "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/tests_board.exe"
+Directory: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build
+"BoardTests" start time: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.12"
@@ -14,18 +24,31 @@ Output:
 [doctest] assertions: 8 | 8 passed | 0 failed |
 [doctest] Status: SUCCESS!
 <end of output>
+<<<<<<< HEAD
 Test time =   0.66 sec
 ----------------------------------------------------------
 Test Passed.
 "BoardTests" end time: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Test time =   0.73 sec
+----------------------------------------------------------
+Test Passed.
+"BoardTests" end time: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 "BoardTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/3 Testing: GameTests
 2/3 Test: GameTests
+<<<<<<< HEAD
 Command: "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/tests_game.exe"
 Directory: C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build
 "GameTests" start time: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Command: "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/tests_game.exe"
+Directory: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build
+"GameTests" start time: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.12"
@@ -35,18 +58,31 @@ Output:
 [doctest] assertions: 12 | 12 passed | 0 failed |
 [doctest] Status: SUCCESS!
 <end of output>
+<<<<<<< HEAD
 Test time =   1.05 sec
 ----------------------------------------------------------
 Test Passed.
 "GameTests" end time: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Test time =   1.21 sec
+----------------------------------------------------------
+Test Passed.
+"GameTests" end time: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 "GameTests" time elapsed: 00:00:01
 ----------------------------------------------------------
 
 3/3 Testing: MenuTests
 3/3 Test: MenuTests
+<<<<<<< HEAD
 Command: "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/tests_menu.exe"
 Directory: C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build
 "MenuTests" start time: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Command: "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/tests_menu.exe"
+Directory: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build
+"MenuTests" start time: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.12"
@@ -56,6 +92,7 @@ Output:
 [doctest] assertions: 8 | 8 passed | 0 failed |
 [doctest] Status: SUCCESS!
 <end of output>
+<<<<<<< HEAD
 Test time =   0.36 sec
 ----------------------------------------------------------
 Test Passed.
@@ -64,3 +101,13 @@ Test Passed.
 ----------------------------------------------------------
 
 End testing: Jun 17 13:47 RTZ 2 (çèìà)
+=======
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"MenuTests" end time: Jun 17 12:53 RTZ 2 (çèìà)
+"MenuTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 17 12:53 RTZ 2 (çèìà)
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper
+=======
+# Install script for directory: C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,7 +44,11 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
+<<<<<<< HEAD
   file(WRITE "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/install_local_manifest.txt"
+=======
+  file(WRITE "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/install_local_manifest.txt"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +64,10 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+<<<<<<< HEAD
   file(WRITE "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+  file(WRITE "C:/Users/Mustafayev/OneDrive/Desktop/123/minesweeper/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 69dafb214aa47b85b49af90e19c0957507bdfdca
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
