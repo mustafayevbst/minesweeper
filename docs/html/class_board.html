@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Board Class Reference</title>
+<title>Mineswapper: Board Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Mineswapper
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -136,12 +136,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4fbdeedd9a7c304fcaa23b61585a5b4" id="r_ae4fbdeedd9a7c304fcaa23b61585a5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4fbdeedd9a7c304fcaa23b61585a5b4">placeMine</a> (int x, int y)</td></tr>
 <tr class="memdesc:ae4fbdeedd9a7c304fcaa23b61585a5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Явно установить мину в указанную клетку. Используется для тестирования.  <br /></td></tr>
 <tr class="separator:ae4fbdeedd9a7c304fcaa23b61585a5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f6bf7a42fe7bf629eec73056387b52" id="r_a57f6bf7a42fe7bf629eec73056387b52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57f6bf7a42fe7bf629eec73056387b52">countMines</a> (int x, int y) const</td></tr>
+<tr class="memdesc:a57f6bf7a42fe7bf629eec73056387b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Посчитать количество мин вокруг клетки.  <br /></td></tr>
+<tr class="separator:a57f6bf7a42fe7bf629eec73056387b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc5d867a481fc36b6f99dd0dce5d23b" id="r_a9bc5d867a481fc36b6f99dd0dce5d23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bc5d867a481fc36b6f99dd0dce5d23b">clickCell</a> (int x, int y)</td></tr>
 <tr class="memdesc:a9bc5d867a481fc36b6f99dd0dce5d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработать клик пользователя по клетке.  <br /></td></tr>
 <tr class="separator:a9bc5d867a481fc36b6f99dd0dce5d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fabc4d9e06233f6c9329cda562a513" id="r_a23fabc4d9e06233f6c9329cda562a513"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23fabc4d9e06233f6c9329cda562a513">checkWin</a> () const</td></tr>
 <tr class="memdesc:a23fabc4d9e06233f6c9329cda562a513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверить, выиграна ли игра.  <br /></td></tr>
 <tr class="separator:a23fabc4d9e06233f6c9329cda562a513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4580d2788a2581afe9a92a8fa4638752" id="r_a4580d2788a2581afe9a92a8fa4638752"><td class="memItemLeft" align="right" valign="top"><a id="a4580d2788a2581afe9a92a8fa4638752" name="a4580d2788a2581afe9a92a8fa4638752"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstClick</b> () const</td></tr>
+<tr class="separator:a4580d2788a2581afe9a92a8fa4638752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed807dd6e632938f91cdc4683682a76" id="r_afed807dd6e632938f91cdc4683682a76"><td class="memItemLeft" align="right" valign="top"><a id="afed807dd6e632938f91cdc4683682a76" name="afed807dd6e632938f91cdc4683682a76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFirstClick</b> (bool value)</td></tr>
+<tr class="separator:afed807dd6e632938f91cdc4683682a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -153,7 +162,7 @@ GameState&#160;</td><td class="memItemRight" valign="bottom"><b>gameState</b> = 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a05a6981c9cef3d894040069265009f60" id="r_a05a6981c9cef3d894040069265009f60"><td class="memItemLeft" align="right" valign="top"><a id="a05a6981c9cef3d894040069265009f60" name="a05a6981c9cef3d894040069265009f60"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05a6981c9cef3d894040069265009f60">BoardTestFriend</a></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>BoardTestFriend</b></td></tr>
 <tr class="memdesc:a05a6981c9cef3d894040069265009f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дружественный класс-обёртка для доступа к приватным членам для тестирования <br /></td></tr>
 <tr class="separator:a05a6981c9cef3d894040069265009f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -251,6 +260,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a57f6bf7a42fe7bf629eec73056387b52" name="a57f6bf7a42fe7bf629eec73056387b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f6bf7a42fe7bf629eec73056387b52">&#9670;&#160;</a></span>countMines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Board::countMines </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Посчитать количество мин вокруг клетки. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Координата клетки по X. </td></tr>
+    <tr><td class="paramname">y</td><td>Координата клетки по Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Количество мин в соседних клетках. </dd></dl>
 
 </div>
 </div>
@@ -390,8 +430,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_board_8h_source.html">Board.h</a></li>
-<li><b>Board.cpp</b></li>
+<li>src/<a class="el" href="_board_8h_source.html">Board.h</a></li>
+<li>src/<b>Board.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
