@@ -1,7 +1,8 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+
 #include <vector>
 #include <string>
+#include <SFML/Graphics.hpp>
 
 /**
  * @brief Класс меню для отображения и управления списком пунктов меню.

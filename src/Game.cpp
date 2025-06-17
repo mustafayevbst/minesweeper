@@ -1,5 +1,5 @@
-#include "Game.h"
 #include <iostream>
+#include "Game.h"
 
 Game::Game(int width, int height, int mines) :
     window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),
