@@ -3,11 +3,6 @@
 
 Menu::Menu(float width, float height, const std::vector<std::wstring>& labels)
 {
-    if (!font.loadFromFile("assets/ZingRust.ttf")) {
-        std::cerr << "Font not found\n";
-        std::exit(EXIT_FAILURE);
-    }
-
     for (size_t i = 0; i < labels.size(); ++i) {
         sf::Text text;
         text.setFont(font);
