@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Menu.h Source File</title>
+<title>Mineswapper: src/Menu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Mineswapper
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -106,40 +106,41 @@ $(function(){initNavTree('_menu_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_menu.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="class_menu.html#aae8623c237903751426a5f34af908e1e">Menu</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_menu.html#aae8623c237903751426a5f34af908e1e">Menu</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, <span class="keyword">const</span> std::vector&lt;std::wstring&gt;&amp; labels);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a1443dcfd1c1c9844c40658d752c1fbab">draw</a>(sf::RenderWindow&amp; window);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#abfa1619b1d868d85b3978f5918c2a56f">moveUp</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#abbec620bd41608fba287400ead4467aa">moveDown</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#a6cebfd0895a43db103cdccf6d66af565">getSelectedIndex</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> selectedIndex;                  </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    sf::Font font;                     </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::vector&lt;sf::Text&gt; menuItems;   </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_menu.html">   13</a></span><span class="keyword">class </span><a class="code hl_function" href="class_menu.html#aae8623c237903751426a5f34af908e1e">Menu</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_menu.html#aae8623c237903751426a5f34af908e1e">Menu</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, <span class="keyword">const</span> std::vector&lt;std::wstring&gt;&amp; labels);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a1443dcfd1c1c9844c40658d752c1fbab">draw</a>(sf::RenderWindow&amp; window);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#abfa1619b1d868d85b3978f5918c2a56f">moveUp</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#abbec620bd41608fba287400ead4467aa">moveDown</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#a6cebfd0895a43db103cdccf6d66af565">getSelectedIndex</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> selectedIndex;                  </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    sf::Font font;                     </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::vector&lt;sf::Text&gt; menuItems;   </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
-<div class="ttc" id="aclass_menu_html_a1443dcfd1c1c9844c40658d752c1fbab"><div class="ttname"><a href="class_menu.html#a1443dcfd1c1c9844c40658d752c1fbab">Menu::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window)</div><div class="ttdoc">Отрисовать меню в заданном окне.</div><div class="ttdef"><b>Definition</b> Menu.cpp:35</div></div>
-<div class="ttc" id="aclass_menu_html_a6cebfd0895a43db103cdccf6d66af565"><div class="ttname"><a href="class_menu.html#a6cebfd0895a43db103cdccf6d66af565">Menu::getSelectedIndex</a></div><div class="ttdeci">int getSelectedIndex() const</div><div class="ttdoc">Получить индекс текущего выбранного пункта меню.</div><div class="ttdef"><b>Definition</b> Menu.cpp:57</div></div>
+<div class="ttc" id="aclass_menu_html_a1443dcfd1c1c9844c40658d752c1fbab"><div class="ttname"><a href="class_menu.html#a1443dcfd1c1c9844c40658d752c1fbab">Menu::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window)</div><div class="ttdoc">Отрисовать меню в заданном окне.</div><div class="ttdef"><b>Definition</b> Menu.cpp:32</div></div>
+<div class="ttc" id="aclass_menu_html_a6cebfd0895a43db103cdccf6d66af565"><div class="ttname"><a href="class_menu.html#a6cebfd0895a43db103cdccf6d66af565">Menu::getSelectedIndex</a></div><div class="ttdeci">int getSelectedIndex() const</div><div class="ttdoc">Получить индекс текущего выбранного пункта меню.</div><div class="ttdef"><b>Definition</b> Menu.cpp:54</div></div>
 <div class="ttc" id="aclass_menu_html_aae8623c237903751426a5f34af908e1e"><div class="ttname"><a href="class_menu.html#aae8623c237903751426a5f34af908e1e">Menu::Menu</a></div><div class="ttdeci">Menu(float width, float height, const std::vector&lt; std::wstring &gt; &amp;labels)</div><div class="ttdoc">Конструктор меню.</div><div class="ttdef"><b>Definition</b> Menu.cpp:4</div></div>
-<div class="ttc" id="aclass_menu_html_abbec620bd41608fba287400ead4467aa"><div class="ttname"><a href="class_menu.html#abbec620bd41608fba287400ead4467aa">Menu::moveDown</a></div><div class="ttdeci">void moveDown()</div><div class="ttdoc">Переместить выделение меню вниз.</div><div class="ttdef"><b>Definition</b> Menu.cpp:49</div></div>
-<div class="ttc" id="aclass_menu_html_abfa1619b1d868d85b3978f5918c2a56f"><div class="ttname"><a href="class_menu.html#abfa1619b1d868d85b3978f5918c2a56f">Menu::moveUp</a></div><div class="ttdeci">void moveUp()</div><div class="ttdoc">Переместить выделение меню вверх.</div><div class="ttdef"><b>Definition</b> Menu.cpp:41</div></div>
+<div class="ttc" id="aclass_menu_html_abbec620bd41608fba287400ead4467aa"><div class="ttname"><a href="class_menu.html#abbec620bd41608fba287400ead4467aa">Menu::moveDown</a></div><div class="ttdeci">void moveDown()</div><div class="ttdoc">Переместить выделение меню вниз.</div><div class="ttdef"><b>Definition</b> Menu.cpp:46</div></div>
+<div class="ttc" id="aclass_menu_html_abfa1619b1d868d85b3978f5918c2a56f"><div class="ttname"><a href="class_menu.html#abfa1619b1d868d85b3978f5918c2a56f">Menu::moveUp</a></div><div class="ttdeci">void moveUp()</div><div class="ttdoc">Переместить выделение меню вверх.</div><div class="ttdef"><b>Definition</b> Menu.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Menu.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Menu.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

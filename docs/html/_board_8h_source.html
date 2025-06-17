@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Board.h Source File</title>
+<title>Mineswapper: src/Board.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Mineswapper
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -106,111 +106,88 @@ $(function(){initNavTree('_board_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">enum class</span> GameState {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    Playing, </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Lost,    </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Won      </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_board.html">   20</a></span><span class="keyword">class </span><a class="code hl_function" href="class_board.html#a2a08d644a11d44cd0314df86c012ddb8">Board</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="class_board.html#a2a08d644a11d44cd0314df86c012ddb8">Board</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> tilesize);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#abf3e857c74bd48891a796c4d31425f4e">reveal</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#ae65fc91263dba6d59c9d54f399949534">toggleFlag</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a0a57db5b42dfbd63fa0c84ad9ad4a85a">draw</a>(sf::RenderWindow&amp; window) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_board.html#a740e7b86e59a1c0e2bbcc68756b5d3e3">getTileSize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#ae4fbdeedd9a7c304fcaa23b61585a5b4">placeMine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a9bc5d867a481fc36b6f99dd0dce5d23b">clickCell</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board.html#a23fabc4d9e06233f6c9329cda562a513">checkWin</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">   87</a></span>    GameState <a class="code hl_variable" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">gameState</a> = GameState::Playing;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">int</span> width;   </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">int</span> height;  </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">int</span> mines;   </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::vector&lt;std::vector&lt;char&gt;&gt; field;     </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; revealed;  </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; flagged;   </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    sf::Font font;                            </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">enum class</span> GameState {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Playing, </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Lost,    </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Won      </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_board.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_board.html#a2a08d644a11d44cd0314df86c012ddb8">Board</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_board.html#a2a08d644a11d44cd0314df86c012ddb8">Board</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> tilesize);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#abf3e857c74bd48891a796c4d31425f4e">reveal</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#ae65fc91263dba6d59c9d54f399949534">toggleFlag</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a0a57db5b42dfbd63fa0c84ad9ad4a85a">draw</a>(sf::RenderWindow&amp; window) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_board.html#a740e7b86e59a1c0e2bbcc68756b5d3e3">getTileSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#ae4fbdeedd9a7c304fcaa23b61585a5b4">placeMine</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_board.html#a57f6bf7a42fe7bf629eec73056387b52">countMines</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a9bc5d867a481fc36b6f99dd0dce5d23b">clickCell</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board.html#a23fabc4d9e06233f6c9329cda562a513">checkWin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">   97</a></span>    GameState <a class="code hl_variable" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">gameState</a> = GameState::Playing;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">int</span> tileSize; </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    sf::Texture tilesTexture; </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">bool</span> firstClick = <span class="keyword">true</span>; </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">void</span> placeMines(<span class="keywordtype">int</span> firstClickX, <span class="keywordtype">int</span> firstClickY);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">bool</span> isInSafeZone(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> safeX, <span class="keywordtype">int</span> safeY) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">int</span> countMines(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> revealEmpty(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    GameState getGameState()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">gameState</a>; }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">void</span> revealAll();</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_board.html#a05a6981c9cef3d894040069265009f60">  154</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_board.html#a05a6981c9cef3d894040069265009f60">BoardTestFriend</a>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>};</div>
-</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">bool</span> getFirstClick()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> firstClick; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> setFirstClick(<span class="keywordtype">bool</span> value) { firstClick = value; }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">int</span> width;   </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">int</span> height;  </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">int</span> mines;   </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    std::vector&lt;std::vector&lt;char&gt;&gt; field;     </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; revealed;  </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    std::vector&lt;std::vector&lt;bool&gt;&gt; flagged;   </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    sf::Font font;                            </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">int</span> tileSize; </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    sf::Texture tilesTexture; </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">bool</span> firstClick = <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> placeMines(<span class="keywordtype">int</span> firstClickX, <span class="keywordtype">int</span> firstClickY);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">bool</span> isInSafeZone(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> safeX, <span class="keywordtype">int</span> safeY) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> revealEmpty(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    GameState getGameState()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">gameState</a>; }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">void</span> revealAll();</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
-<div class="foldopen" id="foldopen00160" data-start="{" data-end="};">
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_board_test_friend.html">  160</a></span><span class="keyword">class </span><a class="code hl_class" href="class_board_test_friend.html">BoardTestFriend</a> {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_board_test_friend.html#adbba19cdd48601e74980e58fccc4d91a">  170</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_board_test_friend.html#adbba19cdd48601e74980e58fccc4d91a">countMines</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_board.html">Board</a>&amp; board, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> board.countMines(x, y);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_board.html#a05a6981c9cef3d894040069265009f60">  158</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="class_board.html#a05a6981c9cef3d894040069265009f60">BoardTestFriend</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>};</div>
 </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span></div>
-<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_board_test_friend.html#a6835c86291db2358bbc164c4810760f5">  180</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_board_test_friend.html#a6835c86291db2358bbc164c4810760f5">setFirstClick</a>(<a class="code hl_class" href="class_board.html">Board</a>&amp; board, <span class="keywordtype">bool</span> value) {</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        board.firstClick = value;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
-</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span></div>
-<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_board_test_friend.html#a75a32983d615a1e6cdbd5d947f20f6d2">  190</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board_test_friend.html#a75a32983d615a1e6cdbd5d947f20f6d2">getFirstClick</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_board.html">Board</a>&amp; board) {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">return</span> board.firstClick;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
-</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
-</div>
-<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdoc">Класс, представляющий игровое поле &quot;Сапёр&quot;.</div><div class="ttdef"><b>Definition</b> Board.h:20</div></div>
-<div class="ttc" id="aclass_board_html_a05a6981c9cef3d894040069265009f60"><div class="ttname"><a href="class_board.html#a05a6981c9cef3d894040069265009f60">Board::BoardTestFriend</a></div><div class="ttdeci">friend class BoardTestFriend</div><div class="ttdoc">Дружественный класс-обёртка для доступа к приватным членам для тестирования</div><div class="ttdef"><b>Definition</b> Board.h:154</div></div>
-<div class="ttc" id="aclass_board_html_a0a57db5b42dfbd63fa0c84ad9ad4a85a"><div class="ttname"><a href="class_board.html#a0a57db5b42dfbd63fa0c84ad9ad4a85a">Board::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window) const</div><div class="ttdoc">Отрисовать игровое поле в окно.</div><div class="ttdef"><b>Definition</b> Board.cpp:75</div></div>
-<div class="ttc" id="aclass_board_html_a23fabc4d9e06233f6c9329cda562a513"><div class="ttname"><a href="class_board.html#a23fabc4d9e06233f6c9329cda562a513">Board::checkWin</a></div><div class="ttdeci">bool checkWin() const</div><div class="ttdoc">Проверить, выиграна ли игра.</div><div class="ttdef"><b>Definition</b> Board.cpp:156</div></div>
+<div class="ttc" id="aclass_board_html_a05a6981c9cef3d894040069265009f60"><div class="ttname"><a href="class_board.html#a05a6981c9cef3d894040069265009f60">Board::BoardTestFriend</a></div><div class="ttdeci">friend class BoardTestFriend</div><div class="ttdoc">Дружественный класс-обёртка для доступа к приватным членам для тестирования</div><div class="ttdef"><b>Definition</b> Board.h:158</div></div>
+<div class="ttc" id="aclass_board_html_a0a57db5b42dfbd63fa0c84ad9ad4a85a"><div class="ttname"><a href="class_board.html#a0a57db5b42dfbd63fa0c84ad9ad4a85a">Board::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window) const</div><div class="ttdoc">Отрисовать игровое поле в окно.</div><div class="ttdef"><b>Definition</b> Board.cpp:82</div></div>
+<div class="ttc" id="aclass_board_html_a23fabc4d9e06233f6c9329cda562a513"><div class="ttname"><a href="class_board.html#a23fabc4d9e06233f6c9329cda562a513">Board::checkWin</a></div><div class="ttdeci">bool checkWin() const</div><div class="ttdoc">Проверить, выиграна ли игра.</div><div class="ttdef"><b>Definition</b> Board.cpp:170</div></div>
 <div class="ttc" id="aclass_board_html_a2a08d644a11d44cd0314df86c012ddb8"><div class="ttname"><a href="class_board.html#a2a08d644a11d44cd0314df86c012ddb8">Board::Board</a></div><div class="ttdeci">Board(int w, int h, int m, int tilesize)</div><div class="ttdoc">Конструктор доски.</div><div class="ttdef"><b>Definition</b> Board.cpp:7</div></div>
-<div class="ttc" id="aclass_board_html_a740e7b86e59a1c0e2bbcc68756b5d3e3"><div class="ttname"><a href="class_board.html#a740e7b86e59a1c0e2bbcc68756b5d3e3">Board::getTileSize</a></div><div class="ttdeci">int getTileSize() const</div><div class="ttdoc">Получить размер одной клетки.</div><div class="ttdef"><b>Definition</b> Board.cpp:131</div></div>
-<div class="ttc" id="aclass_board_html_a9bc5d867a481fc36b6f99dd0dce5d23b"><div class="ttname"><a href="class_board.html#a9bc5d867a481fc36b6f99dd0dce5d23b">Board::clickCell</a></div><div class="ttdeci">void clickCell(int x, int y)</div><div class="ttdoc">Обработать клик пользователя по клетке.</div><div class="ttdef"><b>Definition</b> Board.cpp:167</div></div>
+<div class="ttc" id="aclass_board_html_a57f6bf7a42fe7bf629eec73056387b52"><div class="ttname"><a href="class_board.html#a57f6bf7a42fe7bf629eec73056387b52">Board::countMines</a></div><div class="ttdeci">int countMines(int x, int y) const</div><div class="ttdoc">Посчитать количество мин вокруг клетки.</div><div class="ttdef"><b>Definition</b> Board.cpp:145</div></div>
+<div class="ttc" id="aclass_board_html_a740e7b86e59a1c0e2bbcc68756b5d3e3"><div class="ttname"><a href="class_board.html#a740e7b86e59a1c0e2bbcc68756b5d3e3">Board::getTileSize</a></div><div class="ttdeci">int getTileSize() const</div><div class="ttdoc">Получить размер одной клетки.</div><div class="ttdef"><b>Definition</b> Board.cpp:141</div></div>
+<div class="ttc" id="aclass_board_html_a9bc5d867a481fc36b6f99dd0dce5d23b"><div class="ttname"><a href="class_board.html#a9bc5d867a481fc36b6f99dd0dce5d23b">Board::clickCell</a></div><div class="ttdeci">void clickCell(int x, int y)</div><div class="ttdoc">Обработать клик пользователя по клетке.</div><div class="ttdef"><b>Definition</b> Board.cpp:181</div></div>
 <div class="ttc" id="aclass_board_html_abf3e857c74bd48891a796c4d31425f4e"><div class="ttname"><a href="class_board.html#abf3e857c74bd48891a796c4d31425f4e">Board::reveal</a></div><div class="ttdeci">void reveal(int x, int y)</div><div class="ttdoc">Открыть клетку на доске (аналог клика).</div><div class="ttdef"><b>Definition</b> Board.cpp:43</div></div>
-<div class="ttc" id="aclass_board_html_ac386a9c94c9e9a7f7e543d2d6067482b"><div class="ttname"><a href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">Board::gameState</a></div><div class="ttdeci">GameState gameState</div><div class="ttdoc">Текущее состояние игры</div><div class="ttdef"><b>Definition</b> Board.h:87</div></div>
-<div class="ttc" id="aclass_board_html_ae4fbdeedd9a7c304fcaa23b61585a5b4"><div class="ttname"><a href="class_board.html#ae4fbdeedd9a7c304fcaa23b61585a5b4">Board::placeMine</a></div><div class="ttdeci">void placeMine(int x, int y)</div><div class="ttdoc">Явно установить мину в указанную клетку. Используется для тестирования.</div><div class="ttdef"><b>Definition</b> Board.cpp:146</div></div>
-<div class="ttc" id="aclass_board_html_ae65fc91263dba6d59c9d54f399949534"><div class="ttname"><a href="class_board.html#ae65fc91263dba6d59c9d54f399949534">Board::toggleFlag</a></div><div class="ttdeci">void toggleFlag(int x, int y)</div><div class="ttdoc">Переключить флаг на клетке.</div><div class="ttdef"><b>Definition</b> Board.cpp:63</div></div>
-<div class="ttc" id="aclass_board_test_friend_html"><div class="ttname"><a href="class_board_test_friend.html">BoardTestFriend</a></div><div class="ttdoc">Класс-обёртка для тестирования приватных методов и полей Board.</div><div class="ttdef"><b>Definition</b> Board.h:160</div></div>
-<div class="ttc" id="aclass_board_test_friend_html_a6835c86291db2358bbc164c4810760f5"><div class="ttname"><a href="class_board_test_friend.html#a6835c86291db2358bbc164c4810760f5">BoardTestFriend::setFirstClick</a></div><div class="ttdeci">static void setFirstClick(Board &amp;board, bool value)</div><div class="ttdoc">Установить значение флага первого клика.</div><div class="ttdef"><b>Definition</b> Board.h:180</div></div>
-<div class="ttc" id="aclass_board_test_friend_html_a75a32983d615a1e6cdbd5d947f20f6d2"><div class="ttname"><a href="class_board_test_friend.html#a75a32983d615a1e6cdbd5d947f20f6d2">BoardTestFriend::getFirstClick</a></div><div class="ttdeci">static bool getFirstClick(const Board &amp;board)</div><div class="ttdoc">Получить значение флага первого клика.</div><div class="ttdef"><b>Definition</b> Board.h:190</div></div>
-<div class="ttc" id="aclass_board_test_friend_html_adbba19cdd48601e74980e58fccc4d91a"><div class="ttname"><a href="class_board_test_friend.html#adbba19cdd48601e74980e58fccc4d91a">BoardTestFriend::countMines</a></div><div class="ttdeci">static int countMines(const Board &amp;board, int x, int y)</div><div class="ttdoc">Вызвать приватный метод подсчёта мин вокруг клетки.</div><div class="ttdef"><b>Definition</b> Board.h:170</div></div>
+<div class="ttc" id="aclass_board_html_ac386a9c94c9e9a7f7e543d2d6067482b"><div class="ttname"><a href="class_board.html#ac386a9c94c9e9a7f7e543d2d6067482b">Board::gameState</a></div><div class="ttdeci">GameState gameState</div><div class="ttdoc">Текущее состояние игры</div><div class="ttdef"><b>Definition</b> Board.h:97</div></div>
+<div class="ttc" id="aclass_board_html_ae4fbdeedd9a7c304fcaa23b61585a5b4"><div class="ttname"><a href="class_board.html#ae4fbdeedd9a7c304fcaa23b61585a5b4">Board::placeMine</a></div><div class="ttdeci">void placeMine(int x, int y)</div><div class="ttdoc">Явно установить мину в указанную клетку. Используется для тестирования.</div><div class="ttdef"><b>Definition</b> Board.cpp:158</div></div>
+<div class="ttc" id="aclass_board_html_ae65fc91263dba6d59c9d54f399949534"><div class="ttname"><a href="class_board.html#ae65fc91263dba6d59c9d54f399949534">Board::toggleFlag</a></div><div class="ttdeci">void toggleFlag(int x, int y)</div><div class="ttdoc">Переключить флаг на клетке.</div><div class="ttdef"><b>Definition</b> Board.cpp:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Board.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Board.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
