@@ -4,7 +4,6 @@
 #include <cstdlib>
 #include <iostream>
 
-
 Board::Board(int w, int h, int m, int tilesize) : width(w), height(h), mines(m), tileSize(tilesize) {
     field = std::vector<std::vector<char>>(width, std::vector<char>(height, '.'));
     revealed = std::vector<std::vector<bool>>(width, std::vector<bool>(height, false));

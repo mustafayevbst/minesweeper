@@ -70,6 +70,15 @@ public:
     void placeMine(int x, int y);
 
     /**
+     * @brief Посчитать количество мин вокруг клетки.
+     * 
+     * @param x Координата клетки по X.
+     * @param y Координата клетки по Y.
+     * @return Количество мин в соседних клетках.
+     */
+    int countMines(int x, int y) const;
+
+    /**
      * @brief Обработать клик пользователя по клетке.
      * 
      * @param x Координата по X.
@@ -86,6 +95,9 @@ public:
 
     /// Текущее состояние игры
     GameState gameState = GameState::Playing;
+
+    bool getFirstClick() const { return firstClick; }
+    void setFirstClick(bool value) { firstClick = value; }
 
 private:
     int width;   ///< Ширина доски в клетках
@@ -123,15 +135,6 @@ private:
     bool isInSafeZone(int x, int y, int safeX, int safeY) const;
 
     /**
-     * @brief Посчитать количество мин вокруг клетки.
-     * 
-     * @param x Координата клетки по X.
-     * @param y Координата клетки по Y.
-     * @return Количество мин в соседних клетках.
-     */
-    int countMines(int x, int y) const;
-
-    /**
      * @brief Рекурсивно открыть все пустые клетки вокруг.
      * 
      * @param x Координата клетки по X.
@@ -153,42 +156,4 @@ private:
 
     /// Дружественный класс-обёртка для доступа к приватным членам для тестирования
     friend class BoardTestFriend;
-};
-
-/**
- * @brief Класс-обёртка для тестирования приватных методов и полей Board.
- */
-class BoardTestFriend {
-public:
-    /**
-     * @brief Вызвать приватный метод подсчёта мин вокруг клетки.
-     * 
-     * @param board Ссылка на объект Board.
-     * @param x Координата клетки по X.
-     * @param y Координата клетки по Y.
-     * @return Количество мин вокруг клетки.
-     */
-    static int countMines(const Board& board, int x, int y) {
-        return board.countMines(x, y);
-    }
-
-    /**
-     * @brief Установить значение флага первого клика.
-     * 
-     * @param board Ссылка на объект Board.
-     * @param value Новое значение флага.
-     */
-    static void setFirstClick(Board& board, bool value) {
-        board.firstClick = value;
-    }
-
-    /**
-     * @brief Получить значение флага первого клика.
-     * 
-     * @param board Ссылка на объект Board.
-     * @return Текущее значение флага firstClick.
-     */
-    static bool getFirstClick(const Board& board) {
-        return board.firstClick;
-    }
 };

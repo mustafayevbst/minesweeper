@@ -1,4 +1,4 @@
-BoardTests 1 0.432992
-GameTests 1 0.972119
-MenuTests 1 0.480553
+BoardTests 1 0.632235
+GameTests 1 1.69958
+MenuTests 1 0.314399
 ---

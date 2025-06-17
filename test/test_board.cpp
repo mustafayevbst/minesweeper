@@ -25,8 +25,8 @@ TEST_CASE("Count mines") {
     board.placeMine(1, 0);
     board.placeMine(0, 1);
 
-    CHECK(BoardTestFriend::countMines(board, 1, 1) == 3);
-    CHECK(BoardTestFriend::countMines(board, 2, 2) == 0);
+    CHECK(board.countMines(1, 1) == 3);
+    CHECK(board.countMines(2, 2) == 0);
 }
 
 // Проверка поражения
@@ -34,7 +34,7 @@ TEST_CASE("Click mine loses game") {
     Board board(2, 2, 0, 32);
     board.placeMine(1, 1);
 
-    BoardTestFriend::setFirstClick(board, false);
+    board.setFirstClick(false);
     board.clickCell(1, 1);
     CHECK(board.gameState == GameState::Lost);
 }
@@ -43,7 +43,7 @@ TEST_CASE("Click mine loses game") {
 TEST_CASE("Winning the game") {
     Board board(2, 2, 1, 32);
     board.placeMine(0, 0);
-    BoardTestFriend::setFirstClick(board, false);
+    board.setFirstClick(false);
 
     board.clickCell(0, 1);
     board.clickCell(1, 0);
