@@ -1,0 +1,12 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper
+# Build directory: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(BoardTests "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/build/tests_board.exe")
+set_tests_properties(BoardTests PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;65;add_test;C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;0;")
+add_test(GameTests "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/build/tests_game.exe")
+set_tests_properties(GameTests PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;86;add_test;C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;0;")
+add_test(MenuTests "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/build/tests_menu.exe")
+set_tests_properties(MenuTests PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;105;add_test;C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/CMakeLists.txt;0;")

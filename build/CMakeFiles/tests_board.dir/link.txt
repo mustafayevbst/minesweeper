@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\tests_board.dir/objects.a
+C:\PROGRA~1\C__~1\mingw64\bin\ar.exe qc CMakeFiles\tests_board.dir/objects.a @CMakeFiles\tests_board.dir\objects1.rsp
+C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\tests_board.dir/objects.a -Wl,--no-whole-archive -o tests_board.exe -Wl,--out-implib,libtests_board.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tests_board.dir\linkLibs.rsp
