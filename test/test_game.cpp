@@ -2,9 +2,7 @@
 #include "doctest.h"
 #include "Game.h"
 
-// Чтобы собрать этот тест, в CMakeLists.txt надо добавить doctest, и 
-// прописать запуск ctest после сборки.
-
+// Тестируем инициализицию самой игры
 TEST_CASE("Game initialization") {
     Game game(10, 8, 10);
 
@@ -13,6 +11,7 @@ TEST_CASE("Game initialization") {
     CHECK(game.currentMines_ == 10);
 }
 
+// Тест функции startNewGame()
 TEST_CASE("startNewGame sets correct parameters") {
     Game game(5, 5, 5);
     game.startNewGame(15, 12, 20);
@@ -22,6 +21,7 @@ TEST_CASE("startNewGame sets correct parameters") {
     CHECK(game.currentMines_ == 20);
 }
 
+// Тест функции resetGame()
 TEST_CASE("resetGame restarts with last parameters") {
     Game game(8, 8, 10);
     game.startNewGame(12, 12, 15);

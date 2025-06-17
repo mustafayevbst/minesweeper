@@ -1,11 +1,12 @@
 #include "Game.h"
 #include <iostream>
+
 Game::Game(int width, int height, int mines) :
     window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),
     board_(width, height, mines, tileSize_),
     menu_(window_.getSize().x, window_.getSize().y, { L"Старт", L"Выбрать сложность", L"Выйти" }),
     difficultyMenu_(window_.getSize().x, window_.getSize().y, { L"Простой", L"Средний", L"Сложный" }),
-    currentScreen(GameScreen::MainMenu),
+    currentScreen_(GameScreen::MainMenu),
     currentWidth_(width),
     currentHeight_(height),
     currentMines_(mines)
@@ -44,6 +45,7 @@ void Game::run()
         render();
     }
 }
+
 void Game::startNewGame(int width, int height, int mines) {
     board_ = Board(width, height, mines, tileSize_);
     window_.create(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close);
@@ -51,71 +53,77 @@ void Game::startNewGame(int width, int height, int mines) {
     currentHeight_ = height;
     currentMines_ = mines;
 }
+
 void Game::resetGame() {
     startNewGame(currentWidth_, currentHeight_, currentMines_);
 }
 
-
-
 void Game::processEvents() {
     sf::Event event;
     while (window_.pollEvent(event)) {
-        if (event.type == sf::Event::Closed)
+        if (event.type == sf::Event::Closed){
             window_.close();
+        }
 
-        if (currentScreen == GameScreen::MainMenu) {
+        if (currentScreen_ == GameScreen::MainMenu) {
             if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Up)
+                if (event.key.code == sf::Keyboard::Up) {
                     menu_.moveUp();
-                else if (event.key.code == sf::Keyboard::Down)
+                }
+                else if (event.key.code == sf::Keyboard::Down) {
                     menu_.moveDown();
+                }
                 else if (event.key.code == sf::Keyboard::Enter) {
                     int selected = menu_.getSelectedIndex();
                     if (selected == 0) {
                         startNewGame(10, 8, 10);
-                        currentScreen = GameScreen::Playing;
+                        currentScreen_ = GameScreen::Playing;
                     } else if (selected == 1) {
-                        currentScreen = GameScreen::DifficultyMenu;
+                        currentScreen_ = GameScreen::DifficultyMenu;
                     } else if (selected == 2) {
                         window_.close();
                     }
                 }
             }
         }
-        else if (currentScreen == GameScreen::DifficultyMenu) {
+        else if (currentScreen_ == GameScreen::DifficultyMenu) {
             if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Up)
+                if (event.key.code == sf::Keyboard::Up) {
                     difficultyMenu_.moveUp();
-                else if (event.key.code == sf::Keyboard::Down)
+                }
+                else if (event.key.code == sf::Keyboard::Down) {
                     difficultyMenu_.moveDown();
+                }
                 else if (event.key.code == sf::Keyboard::Enter) {
                     int selected = difficultyMenu_.getSelectedIndex();
 
-                    if (selected == 0){
+                    if (selected == 0) {
                         startNewGame(10, 8, 10);
                     }
                     
-                    else if (selected == 1){
+                    else if (selected == 1) {
                         startNewGame(16, 16, 40);
                     }
 
-                    else{
+                    else {
                         startNewGame(30, 16, 99);
                     }
 
-                    currentScreen = GameScreen::Playing;
+                    currentScreen_ = GameScreen::Playing;
                 }
             }
         }
-        else if (currentScreen == GameScreen::Playing) {
+        else if (currentScreen_ == GameScreen::Playing) {
             if (event.type == sf::Event::MouseButtonPressed) {
                 int x = event.mouseButton.x / tileSize_;
                 int y = event.mouseButton.y / tileSize_;
 
-                if (event.mouseButton.button == sf::Mouse::Left)
+                if (event.mouseButton.button == sf::Mouse::Left) {
                     board_.clickCell(x, y);
-                else if (event.mouseButton.button == sf::Mouse::Right)
+                }
+                else if (event.mouseButton.button == sf::Mouse::Right) {
                     board_.toggleFlag(x, y);
+                }
             }
             else if (event.type == sf::Event::KeyPressed) {
                 if (board_.gameState == GameState::Won || board_.gameState == GameState::Lost) {
@@ -124,21 +132,22 @@ void Game::processEvents() {
                     }
                     else if (event.key.code == sf::Keyboard::Escape) {
                         window_.create(sf::VideoMode(480, 480), "Minesweeper", sf::Style::Titlebar | sf::Style::Close);
-                        currentScreen = GameScreen::MainMenu;
+                        currentScreen_ = GameScreen::MainMenu;
                     }
                 }
             }
         }
     }
 }
+
 void Game::render() {
     window_.clear();
 
-    if (currentScreen == GameScreen::MainMenu){
+    if (currentScreen_ == GameScreen::MainMenu){
         window_.draw(backgroundSprite_);
         menu_.draw(window_);
     }
-    else if (currentScreen == GameScreen::DifficultyMenu) {
+    else if (currentScreen_ == GameScreen::DifficultyMenu) {
         int selected = difficultyMenu_.getSelectedIndex();
         if (selected == 0)
             window_.draw(simpleBgSprite_);
@@ -148,9 +157,9 @@ void Game::render() {
             window_.draw(hardBgSprite_);
         difficultyMenu_.draw(window_);
     }
-    else if (currentScreen == GameScreen::Playing)
+    else if (currentScreen_ == GameScreen::Playing) {
         board_.draw(window_);
+    }
 
     window_.display();
 }
-

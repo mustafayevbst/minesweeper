@@ -96,7 +96,7 @@ private:
     sf::Texture backgroundTexture_; ///< Текущая текстура фона
     sf::Sprite backgroundSprite_;   ///< Текущий спрайт фона
 
-    GameScreen currentScreen = GameScreen::MainMenu; ///< Текущий экран игры
+    GameScreen currentScreen_ = GameScreen::MainMenu; ///< Текущий экран игры
 
     Menu difficultyMenu_;           ///< Меню выбора сложности
     Menu menu_;                    ///< Главное меню

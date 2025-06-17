@@ -3,8 +3,7 @@
 
 Menu::Menu(float width, float height, const std::vector<std::wstring>& labels)
 {
-    if (!font.loadFromFile("assets/ZingRust.ttf")) 
-    {
+    if (!font.loadFromFile("assets/ZingRust.ttf")) {
         std::cerr << "Font not found\n";
         std::exit(EXIT_FAILURE);
     }
@@ -28,8 +27,6 @@ Menu::Menu(float width, float height, const std::vector<std::wstring>& labels)
 
     selectedIndex = 0;
 }
-
-
 
 
 void Menu::draw(sf::RenderWindow& window) {
