@@ -4,7 +4,7 @@
 Game::Game(int width, int height, int mines) :
     window_(sf::VideoMode(width * tileSize_, height * tileSize_), "Minesweeper", sf::Style::Titlebar | sf::Style::Close),
     board_(width, height, mines, tileSize_),
-    menu_(window_.getSize().x, window_.getSize().y, { L"Старт", L"Выбрать сложность", L"Выйти" }),
+    menu_(window_.getSize().x, window_.getSize().y, { L"Старт", L"Выбрать сложность"}),
     difficultyMenu_(window_.getSize().x, window_.getSize().y, { L"Простой", L"Средний", L"Сложный" }),
     currentScreen_(GameScreen::MainMenu),
     currentWidth_(width),
