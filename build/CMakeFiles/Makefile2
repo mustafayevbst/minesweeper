@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper
+CMAKE_SOURCE_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build
+CMAKE_BINARY_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/tests_menu.dir/clean
 CMakeFiles/minesweeper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target minesweeper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=1,2,3,4,5 "Built target minesweeper"
 .PHONY : CMakeFiles/minesweeper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minesweeper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/minesweeper.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 0
 .PHONY : CMakeFiles/minesweeper.dir/rule
 
 # Convenience name for target.
@@ -110,7 +110,7 @@ minesweeper: CMakeFiles/minesweeper.dir/rule
 # codegen rule for target.
 CMakeFiles/minesweeper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minesweeper.dir\build.make CMakeFiles/minesweeper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target minesweeper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=1,2,3,4,5 "Finished codegen for target minesweeper"
 .PHONY : CMakeFiles/minesweeper.dir/codegen
 
 # clean rule for target.
@@ -125,14 +125,14 @@ CMakeFiles/minesweeper.dir/clean:
 CMakeFiles/tests_board.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_board.dir\build.make CMakeFiles/tests_board.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_board.dir\build.make CMakeFiles/tests_board.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=6,7,8 "Built target tests_board"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=6,7,8 "Built target tests_board"
 .PHONY : CMakeFiles/tests_board.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests_board.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tests_board.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 0
 .PHONY : CMakeFiles/tests_board.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ tests_board: CMakeFiles/tests_board.dir/rule
 # codegen rule for target.
 CMakeFiles/tests_board.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_board.dir\build.make CMakeFiles/tests_board.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=6,7,8 "Finished codegen for target tests_board"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=6,7,8 "Finished codegen for target tests_board"
 .PHONY : CMakeFiles/tests_board.dir/codegen
 
 # clean rule for target.
@@ -157,14 +157,14 @@ CMakeFiles/tests_board.dir/clean:
 CMakeFiles/tests_game.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_game.dir\build.make CMakeFiles/tests_game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_game.dir\build.make CMakeFiles/tests_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=9,10,11,12,13 "Built target tests_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=9,10,11,12,13 "Built target tests_game"
 .PHONY : CMakeFiles/tests_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tests_game.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 0
 .PHONY : CMakeFiles/tests_game.dir/rule
 
 # Convenience name for target.
@@ -174,7 +174,7 @@ tests_game: CMakeFiles/tests_game.dir/rule
 # codegen rule for target.
 CMakeFiles/tests_game.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_game.dir\build.make CMakeFiles/tests_game.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=9,10,11,12,13 "Finished codegen for target tests_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=9,10,11,12,13 "Finished codegen for target tests_game"
 .PHONY : CMakeFiles/tests_game.dir/codegen
 
 # clean rule for target.
@@ -189,14 +189,14 @@ CMakeFiles/tests_game.dir/clean:
 CMakeFiles/tests_menu.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_menu.dir\build.make CMakeFiles/tests_menu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_menu.dir\build.make CMakeFiles/tests_menu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=14,15,16 "Built target tests_menu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=14,15,16 "Built target tests_menu"
 .PHONY : CMakeFiles/tests_menu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests_menu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/tests_menu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" 0
 .PHONY : CMakeFiles/tests_menu.dir/rule
 
 # Convenience name for target.
@@ -206,7 +206,7 @@ tests_menu: CMakeFiles/tests_menu.dir/rule
 # codegen rule for target.
 CMakeFiles/tests_menu.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests_menu.dir\build.make CMakeFiles/tests_menu.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=14,15,16 "Finished codegen for target tests_menu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=14,15,16 "Finished codegen for target tests_menu"
 .PHONY : CMakeFiles/tests_menu.dir/codegen
 
 # clean rule for target.

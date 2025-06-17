@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/src/Menu.cpp" "CMakeFiles/tests_menu.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/tests_menu.dir/src/Menu.cpp.obj.d"
-  "C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/test/test_menu.cpp" "CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj" "gcc" "CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj.d"
+  "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/src/Menu.cpp" "CMakeFiles/tests_menu.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/tests_menu.dir/src/Menu.cpp.obj.d"
+  "C:/Users/Mustafayev/OneDrive/Desktop/AIP Project 3-4 module/minesweeper/test/test_menu.cpp" "CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj" "gcc" "CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

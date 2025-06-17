@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper
+CMAKE_SOURCE_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build
+CMAKE_BINARY_DIR = "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests_menu.dir/depend.make
@@ -73,33 +73,33 @@ CMakeFiles/tests_menu.dir/codegen:
 
 CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj: CMakeFiles/tests_menu.dir/flags.make
 CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj: CMakeFiles/tests_menu.dir/includes_CXX.rsp
-CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/test/test_menu.cpp
+CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/test/test_menu.cpp
 CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj: CMakeFiles/tests_menu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj -MF CMakeFiles\tests_menu.dir\test\test_menu.cpp.obj.d -o CMakeFiles\tests_menu.dir\test\test_menu.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\test\test_menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj -MF CMakeFiles\tests_menu.dir\test\test_menu.cpp.obj.d -o CMakeFiles\tests_menu.dir\test\test_menu.cpp.obj -c "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\test\test_menu.cpp"
 
 CMakeFiles/tests_menu.dir/test/test_menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_menu.dir/test/test_menu.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\test\test_menu.cpp > CMakeFiles\tests_menu.dir\test\test_menu.cpp.i
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\test\test_menu.cpp" > CMakeFiles\tests_menu.dir\test\test_menu.cpp.i
 
 CMakeFiles/tests_menu.dir/test/test_menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_menu.dir/test/test_menu.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\test\test_menu.cpp -o CMakeFiles\tests_menu.dir\test\test_menu.cpp.s
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\test\test_menu.cpp" -o CMakeFiles\tests_menu.dir\test\test_menu.cpp.s
 
 CMakeFiles/tests_menu.dir/src/Menu.cpp.obj: CMakeFiles/tests_menu.dir/flags.make
 CMakeFiles/tests_menu.dir/src/Menu.cpp.obj: CMakeFiles/tests_menu.dir/includes_CXX.rsp
-CMakeFiles/tests_menu.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/src/Menu.cpp
+CMakeFiles/tests_menu.dir/src/Menu.cpp.obj: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/src/Menu.cpp
 CMakeFiles/tests_menu.dir/src/Menu.cpp.obj: CMakeFiles/tests_menu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests_menu.dir/src/Menu.cpp.obj"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_menu.dir/src/Menu.cpp.obj -MF CMakeFiles\tests_menu.dir\src\Menu.cpp.obj.d -o CMakeFiles\tests_menu.dir\src\Menu.cpp.obj -c C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\src\Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests_menu.dir/src/Menu.cpp.obj"
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests_menu.dir/src/Menu.cpp.obj -MF CMakeFiles\tests_menu.dir\src\Menu.cpp.obj.d -o CMakeFiles\tests_menu.dir\src\Menu.cpp.obj -c "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp"
 
 CMakeFiles/tests_menu.dir/src/Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests_menu.dir/src/Menu.cpp.i"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\src\Menu.cpp > CMakeFiles\tests_menu.dir\src\Menu.cpp.i
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp" > CMakeFiles\tests_menu.dir\src\Menu.cpp.i
 
 CMakeFiles/tests_menu.dir/src/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests_menu.dir/src/Menu.cpp.s"
-	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\src\Menu.cpp -o CMakeFiles\tests_menu.dir\src\Menu.cpp.s
+	C:\PROGRA~1\C__~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\src\Menu.cpp" -o CMakeFiles\tests_menu.dir\src\Menu.cpp.s
 
 # Object files for target tests_menu
 tests_menu_OBJECTS = \
@@ -112,13 +112,13 @@ tests_menu_EXTERNAL_OBJECTS =
 tests_menu.exe: CMakeFiles/tests_menu.dir/test/test_menu.cpp.obj
 tests_menu.exe: CMakeFiles/tests_menu.dir/src/Menu.cpp.obj
 tests_menu.exe: CMakeFiles/tests_menu.dir/build.make
-tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
-tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
-tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/boo/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
+tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-graphics-d.a
+tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-window-d.a
+tests_menu.exe: C:/Users/Mustafayev/OneDrive/Desktop/AIP\ Project\ 3-4\ module/minesweeper/external/SFML-2.6.2/lib/libsfml-system-d.a
 tests_menu.exe: CMakeFiles/tests_menu.dir/linkLibs.rsp
 tests_menu.exe: CMakeFiles/tests_menu.dir/objects1.rsp
 tests_menu.exe: CMakeFiles/tests_menu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests_menu.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests_menu.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests_menu.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +130,6 @@ CMakeFiles/tests_menu.dir/clean:
 .PHONY : CMakeFiles/tests_menu.dir/clean
 
 CMakeFiles/tests_menu.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build C:\Users\Mustafayev\OneDrive\Desktop\boo\minesweeper\build\CMakeFiles\tests_menu.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build" "C:\Users\Mustafayev\OneDrive\Desktop\AIP Project 3-4 module\minesweeper\build\CMakeFiles\tests_menu.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests_menu.dir/depend
 
