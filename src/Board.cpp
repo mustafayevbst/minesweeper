@@ -1,8 +1,9 @@
 #include "Board.h"
+#include "Game.h"
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
-#include "Game.h"
+
 
 Board::Board(int w, int h, int m, int tilesize) : width(w), height(h), mines(m), tileSize(tilesize) {
     field = std::vector<std::vector<char>>(width, std::vector<char>(height, '.'));

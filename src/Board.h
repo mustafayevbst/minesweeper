@@ -1,6 +1,7 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+
 #include <vector>
+#include <SFML/Graphics.hpp>
 
 /**
  * @brief Состояние игры.
